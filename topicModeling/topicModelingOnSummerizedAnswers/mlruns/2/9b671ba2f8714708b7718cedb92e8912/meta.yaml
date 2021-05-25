@@ -1,0 +1,15 @@
+artifact_uri: file:///home/aqib/preprocessing_psychiatrist_dataset/topic_modeling/level2/topicModelingOnSummerizedAnswers/mlruns/2/9b671ba2f8714708b7718cedb92e8912/artifacts
+end_time: 1621871131081
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: active
+name: ''
+run_id: 9b671ba2f8714708b7718cedb92e8912
+run_uuid: 9b671ba2f8714708b7718cedb92e8912
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1621871131027
+status: 3
+tags: []
+user_id: aqib

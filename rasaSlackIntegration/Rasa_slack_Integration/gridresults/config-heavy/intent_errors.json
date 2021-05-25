@@ -1,0 +1,34 @@
+[
+  {
+    "text": "I've never tried or contemplated suicide. I've always wanted to fix my issues, but I never get around to it.How can I change my feeling of being worthless to everyone?",
+    "intent": "feelings of worthless",
+    "intent_prediction": {
+      "name": "too many issues for counseling",
+      "confidence": 0.9555500745773315
+    }
+  },
+  {
+    "text": "I have a long history of depression and I\u2019m beginning to have anxiety.I have low self esteem but I\u2019ve been happily married for almost 35 years.",
+    "intent": "too many issues for counseling",
+    "intent_prediction": {
+      "name": "How overcome anxierty and depression",
+      "confidence": 0.6483920216560364
+    }
+  },
+  {
+    "text": "Are you Bot?",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7083175182342529
+    }
+  },
+  {
+    "text": "I cant get my mind off the things that are bothering me.",
+    "intent": "How overcome anxierty and depression",
+    "intent_prediction": {
+      "name": "subscribe",
+      "confidence": 0.5491599440574646
+    }
+  }
+]

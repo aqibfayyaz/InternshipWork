@@ -1,0 +1,4 @@
+artifact_location: file:///home/aqib/preprocessing_psychiatrist_dataset/topic_modeling/level2/topicModelingOnSummerizedAnswers/mlruns/2
+experiment_id: '2'
+lifecycle_stage: active
+name: summerizedAnswers

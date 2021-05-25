@@ -1,0 +1,28 @@
+stories:
+ - story: greet and subscribe
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: subscribe
+   - action: newsletter_form
+   - active_loop: newsletter_form
+  
+ - story: feelings of worthless
+   steps:
+   - intent: feelings of worthless
+   - action: utter_feelings_of_worthless
+
+ - story: To many counseling issues
+   steps:
+   - intent: too many issues for counseling
+   - action: utter_to_many_issues_for_counseling
+
+ - story: bot challenge
+   steps:
+   - intent: bot_challenge
+   - action: utter_bot_challenge  
+
+ - story: How find cause of depression and anxiety
+   steps:
+   - intent: find cause of depression and anxiety
+   - action: utter_find_cause_of_depression_anxiety

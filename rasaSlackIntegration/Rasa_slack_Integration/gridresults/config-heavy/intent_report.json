@@ -1,0 +1,72 @@
+{
+  "How overcome anxierty and depression": {
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.6666666666666666,
+    "support": 3,
+    "confused_with": {
+      "subscribe": 1
+    }
+  },
+  "feelings of worthless": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "too many issues for counseling": 1
+    }
+  },
+  "bot_challenge": {
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1-score": 0.888888888888889,
+    "support": 5,
+    "confused_with": {
+      "greet": 1
+    }
+  },
+  "subscribe": {
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1-score": 0.8571428571428571,
+    "support": 3,
+    "confused_with": {}
+  },
+  "greet": {
+    "precision": 0.8571428571428571,
+    "recall": 1.0,
+    "f1-score": 0.923076923076923,
+    "support": 6,
+    "confused_with": {}
+  },
+  "too many issues for counseling": {
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.6666666666666666,
+    "support": 3,
+    "confused_with": {
+      "How overcome anxierty and depression": 1
+    }
+  },
+  "inform": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "accuracy": 0.8461538461538461,
+  "macro avg": {
+    "precision": 0.8486394557823129,
+    "recall": 0.8047619047619048,
+    "f1-score": 0.8098726670155242,
+    "support": 26
+  },
+  "weighted avg": {
+    "precision": 0.8612637362637362,
+    "recall": 0.8461538461538461,
+    "f1-score": 0.8418333802949187,
+    "support": 26
+  }
+}

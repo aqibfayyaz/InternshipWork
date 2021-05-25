@@ -1,0 +1,1781 @@
+2021-05-24 20:23:56,831:INFO:PyCaret NLP Module
+2021-05-24 20:23:56,831:INFO:version 2.3.1
+2021-05-24 20:23:56,832:INFO:Initializing setup()
+2021-05-24 20:23:56,832:INFO:USI: 4620
+2021-05-24 20:23:56,832:INFO:setup(data=(2129, 2), target=summerizedAnswers, custom_stopwords=['would', 'want', 'usd', 'many', 'also', 'make', 'find', 'see', 'say', 'often', 'much', 'go', 'come', 'thought', 'even', 'learn', 'happen', 'much', 'let', 'know', 'thing', 'need', 'take', 'get', 'try', 'ask', 'maybe', 'keep', 'end', 'way', 'suggest', 'likely', 'area', 'part', 'consider', 'right', 'able', 'could', 'tell', 'seem', 'use', 'sometimes', 'think', 'look', 'self', 'lot', 'new', 'well', 'give', 'start'], html=True, session_id=123, log_experiment=True,
+                    experiment_name=questionText, log_plots=False, log_data=False, verbose=True)
+2021-05-24 20:23:56,832:INFO:Checking environment
+2021-05-24 20:23:56,832:INFO:python_version: 3.8.5
+2021-05-24 20:23:56,832:INFO:python_build: ('default', 'Jan 27 2021 15:41:15')
+2021-05-24 20:23:56,832:INFO:machine: x86_64
+2021-05-24 20:23:56,844:INFO:platform: Linux-5.8.0-53-generic-x86_64-with-glibc2.29
+2021-05-24 20:23:56,844:INFO:Memory: svmem(total=8157831168, available=5017767936, percent=38.5, used=2720006144, free=3176239104, active=3046498304, inactive=1348759552, buffers=176762880, cached=2084823040, shared=108363776, slab=344137728)
+2021-05-24 20:23:56,845:INFO:Physical Core: 2
+2021-05-24 20:23:56,845:INFO:Logical Core: 4
+2021-05-24 20:23:56,845:INFO:Checking libraries
+2021-05-24 20:23:56,845:INFO:pd==1.2.4
+2021-05-24 20:23:56,845:INFO:numpy==1.20.3
+2021-05-24 20:23:57,143:INFO:gensim==3.8.3
+2021-05-24 20:23:57,442:INFO:spacy==2.3.5
+2021-05-24 20:23:57,442:INFO:nltk==3.6.2
+2021-05-24 20:23:57,466:INFO:textblob==0.15.3
+2021-05-24 20:23:57,624:INFO:pyLDAvis==3.3.1
+2021-05-24 20:23:57,693:INFO:wordcloud==1.8.1
+2021-05-24 20:23:57,974:INFO:mlflow==1.17.0
+2021-05-24 20:23:57,974:INFO:Checking Exceptions
+2021-05-24 20:23:58,703:INFO:Preloading libraries
+2021-05-24 20:23:58,753:INFO:Preparing display monitor
+2021-05-24 20:23:58,771:INFO:Importing libraries
+2021-05-24 20:23:58,771:INFO:Declaring global variables
+2021-05-24 20:23:58,772:INFO:Input provided : dataframe
+2021-05-24 20:23:58,772:INFO:session_id set to : 123
+2021-05-24 20:23:58,772:INFO:Copying training dataset
+2021-05-24 20:23:58,773:INFO:Importing stopwords from nltk
+2021-05-24 20:24:06,783:INFO:Removing numeric characters from the text
+2021-05-24 20:24:06,793:INFO:Removing special characters from the text
+2021-05-24 20:24:06,832:INFO:Tokenizing Words
+2021-05-24 20:24:06,879:INFO:Removing stopwords
+2021-05-24 20:24:06,917:INFO:Extracting Bigrams
+2021-05-24 20:24:07,020:INFO:Extracting Trigrams
+2021-05-24 20:24:07,183:INFO:Lemmatizing tokens
+2021-05-24 20:24:13,049:INFO:Removing stopwords after lemmatizing
+2021-05-24 20:24:13,079:INFO:Creating corpus and dictionary
+2021-05-24 20:24:13,111:INFO:Compiling processed text
+2021-05-24 20:24:13,113:INFO:Compiling information grid
+2021-05-24 20:24:13,403:INFO:Creating MLFlow logs
+2021-05-24 20:24:13,504:INFO:setup() succesfully completed......................................
+2021-05-24 20:24:18,942:INFO:Initializing create_model()
+2021-05-24 20:24:18,943:INFO:create_model(model=lda, multi_core=False, num_topics=None, verbose=True, system=True)
+2021-05-24 20:24:18,943:INFO:Checking exceptions
+2021-05-24 20:24:18,943:INFO:Preloading libraries
+2021-05-24 20:24:18,943:INFO:Preparing display monitor
+2021-05-24 20:24:18,960:INFO:Defining topic model
+2021-05-24 20:24:18,960:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:24:18,961:INFO:Defining num_topics parameter
+2021-05-24 20:24:18,961:INFO:num_topics set to: 4
+2021-05-24 20:24:18,972:INFO:LdaModel imported successfully
+2021-05-24 20:24:22,053:INFO:LdaModel trained successfully
+2021-05-24 20:24:22,054:INFO:Creating MLFLow Logs
+2021-05-24 20:24:22,107:INFO:LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100)
+2021-05-24 20:24:22,107:INFO:create_model() succesfully completed......................................
+2021-05-24 20:24:43,289:INFO:Initializing plot_model()
+2021-05-24 20:24:43,289:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100), plot=topic_distribution, topic_num=None, save=False, system=True)
+2021-05-24 20:24:43,289:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 20:24:43,289:INFO:Checking exceptions
+2021-05-24 20:24:43,289:INFO:Importing libraries
+2021-05-24 20:24:43,587:INFO:save_param set to False
+2021-05-24 20:24:43,587:INFO:plot type: topic_distribution
+2021-05-24 20:24:43,590:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:24:43,591:INFO:Initializing assign_model()
+2021-05-24 20:24:43,591:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:24:43,591:INFO:Determining model type
+2021-05-24 20:24:43,591:INFO:model type: lda
+2021-05-24 20:24:43,591:INFO:Checking exceptions
+2021-05-24 20:24:43,591:INFO:Preloading libraries
+2021-05-24 20:24:43,591:INFO:Preparing display monitor
+2021-05-24 20:24:44,885:INFO:(2129, 8)
+2021-05-24 20:24:44,885:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:24:44,885:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:24:44,906:INFO:Sorting Dataframe
+2021-05-24 20:24:44,909:INFO:Rendering Visual
+2021-05-24 20:24:45,478:INFO:Visual Rendered Successfully
+2021-05-24 20:24:45,478:INFO:plot_model() succesfully completed......................................
+2021-05-24 20:25:18,714:INFO:Initializing tune_model()
+2021-05-24 20:25:18,714:INFO:tune_model(model=lda, multi_core=True, supervised_target=None, estimator=None, optimize=None, custom_grid=None, auto_fe=True, fold=10, verbose=True)
+2021-05-24 20:25:18,714:INFO:Checking exceptions
+2021-05-24 20:25:18,715:INFO:Preloading libraries
+2021-05-24 20:25:18,715:INFO:Preparing display monitor
+2021-05-24 20:25:18,747:INFO:Importing libraries
+2021-05-24 20:25:18,752:INFO:Objective : Unsupervised
+2021-05-24 20:25:18,752:INFO:Defining model name
+2021-05-24 20:25:18,752:INFO:Topic Model Name: Latent Dirichlet Allocation
+2021-05-24 20:25:18,752:INFO:Defining supervised estimator
+2021-05-24 20:25:18,752:INFO:Estimator: None
+2021-05-24 20:25:18,752:INFO:Defining Optimizer
+2021-05-24 20:25:18,752:INFO:Optimize: None
+2021-05-24 20:25:18,753:INFO:Defining Tuning Grid
+2021-05-24 20:25:18,753:INFO:Pre-defined Grid used
+2021-05-24 20:25:18,772:INFO:Fitting Model with num_topics = 2
+2021-05-24 20:25:18,781:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:25:18,782:INFO:Initializing create_model()
+2021-05-24 20:25:18,782:INFO:create_model(model=lda, multi_core=True, num_topics=2, verbose=False, system=True)
+2021-05-24 20:25:18,782:INFO:Checking exceptions
+2021-05-24 20:25:18,782:INFO:Preloading libraries
+2021-05-24 20:25:18,782:INFO:Preparing display monitor
+2021-05-24 20:25:18,796:INFO:Defining topic model
+2021-05-24 20:25:18,796:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:25:18,796:INFO:Defining num_topics parameter
+2021-05-24 20:25:18,796:INFO:num_topics set to: 2
+2021-05-24 20:25:18,797:INFO:LDA multi_core enabled
+2021-05-24 20:25:18,798:INFO:LdaMulticore imported successfully
+2021-05-24 20:25:22,562:INFO:LdaMulticore trained successfully
+2021-05-24 20:25:22,564:INFO:Creating MLFLow Logs
+2021-05-24 20:25:22,614:INFO:LdaModel(num_terms=1418, num_topics=2, decay=0.5, chunksize=100)
+2021-05-24 20:25:22,614:INFO:create_model() succesfully completed......................................
+2021-05-24 20:25:22,614:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:25:22,614:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:25:22,615:INFO:Initializing assign_model()
+2021-05-24 20:25:22,615:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=2, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:25:22,615:INFO:Determining model type
+2021-05-24 20:25:22,615:INFO:model type: lda
+2021-05-24 20:25:22,615:INFO:Checking exceptions
+2021-05-24 20:25:22,615:INFO:Preloading libraries
+2021-05-24 20:25:22,616:INFO:Preparing display monitor
+2021-05-24 20:25:24,034:INFO:(2129, 6)
+2021-05-24 20:25:24,034:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:25:24,035:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:25:24,036:INFO:Fitting Model with num_topics = 4
+2021-05-24 20:25:24,105:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:25:24,105:INFO:Initializing create_model()
+2021-05-24 20:25:24,105:INFO:create_model(model=lda, multi_core=True, num_topics=4, verbose=False, system=True)
+2021-05-24 20:25:24,106:INFO:Checking exceptions
+2021-05-24 20:25:24,106:INFO:Preloading libraries
+2021-05-24 20:25:24,111:INFO:Preparing display monitor
+2021-05-24 20:25:24,120:INFO:Defining topic model
+2021-05-24 20:25:24,120:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:25:24,120:INFO:Defining num_topics parameter
+2021-05-24 20:25:24,120:INFO:num_topics set to: 4
+2021-05-24 20:25:24,121:INFO:LDA multi_core enabled
+2021-05-24 20:25:24,121:INFO:LdaMulticore imported successfully
+2021-05-24 20:25:29,158:INFO:LdaMulticore trained successfully
+2021-05-24 20:25:29,161:INFO:Creating MLFLow Logs
+2021-05-24 20:25:29,260:INFO:LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100)
+2021-05-24 20:25:29,260:INFO:create_model() succesfully completed......................................
+2021-05-24 20:25:29,261:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:25:29,261:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:25:29,262:INFO:Initializing assign_model()
+2021-05-24 20:25:29,262:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:25:29,262:INFO:Determining model type
+2021-05-24 20:25:29,262:INFO:model type: lda
+2021-05-24 20:25:29,262:INFO:Checking exceptions
+2021-05-24 20:25:29,262:INFO:Preloading libraries
+2021-05-24 20:25:29,263:INFO:Preparing display monitor
+2021-05-24 20:25:31,416:INFO:(2129, 8)
+2021-05-24 20:25:31,428:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:25:31,429:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:25:31,429:INFO:Fitting Model with num_topics = 8
+2021-05-24 20:25:31,447:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:25:31,447:INFO:Initializing create_model()
+2021-05-24 20:25:31,447:INFO:create_model(model=lda, multi_core=True, num_topics=8, verbose=False, system=True)
+2021-05-24 20:25:31,447:INFO:Checking exceptions
+2021-05-24 20:25:31,447:INFO:Preloading libraries
+2021-05-24 20:25:31,447:INFO:Preparing display monitor
+2021-05-24 20:25:31,465:INFO:Defining topic model
+2021-05-24 20:25:31,465:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:25:31,465:INFO:Defining num_topics parameter
+2021-05-24 20:25:31,465:INFO:num_topics set to: 8
+2021-05-24 20:25:31,467:INFO:LDA multi_core enabled
+2021-05-24 20:25:31,467:INFO:LdaMulticore imported successfully
+2021-05-24 20:25:35,684:INFO:LdaMulticore trained successfully
+2021-05-24 20:25:35,686:INFO:Creating MLFLow Logs
+2021-05-24 20:25:35,736:INFO:LdaModel(num_terms=1418, num_topics=8, decay=0.5, chunksize=100)
+2021-05-24 20:25:35,736:INFO:create_model() succesfully completed......................................
+2021-05-24 20:25:35,736:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:25:35,736:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:25:35,737:INFO:Initializing assign_model()
+2021-05-24 20:25:35,737:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=8, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:25:35,737:INFO:Determining model type
+2021-05-24 20:25:35,737:INFO:model type: lda
+2021-05-24 20:25:35,737:INFO:Checking exceptions
+2021-05-24 20:25:35,737:INFO:Preloading libraries
+2021-05-24 20:25:35,737:INFO:Preparing display monitor
+2021-05-24 20:25:37,775:INFO:(2129, 12)
+2021-05-24 20:25:37,775:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:25:37,776:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:25:37,776:INFO:Fitting Model with num_topics = 16
+2021-05-24 20:25:37,783:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:25:37,784:INFO:Initializing create_model()
+2021-05-24 20:25:37,784:INFO:create_model(model=lda, multi_core=True, num_topics=16, verbose=False, system=True)
+2021-05-24 20:25:37,784:INFO:Checking exceptions
+2021-05-24 20:25:37,784:INFO:Preloading libraries
+2021-05-24 20:25:37,784:INFO:Preparing display monitor
+2021-05-24 20:25:37,792:INFO:Defining topic model
+2021-05-24 20:25:37,792:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:25:37,792:INFO:Defining num_topics parameter
+2021-05-24 20:25:37,792:INFO:num_topics set to: 16
+2021-05-24 20:25:37,793:INFO:LDA multi_core enabled
+2021-05-24 20:25:37,793:INFO:LdaMulticore imported successfully
+2021-05-24 20:25:42,903:INFO:LdaMulticore trained successfully
+2021-05-24 20:25:42,905:INFO:Creating MLFLow Logs
+2021-05-24 20:25:42,955:INFO:LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100)
+2021-05-24 20:25:42,956:INFO:create_model() succesfully completed......................................
+2021-05-24 20:25:42,956:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:25:42,956:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:25:42,957:INFO:Initializing assign_model()
+2021-05-24 20:25:42,957:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:25:42,957:INFO:Determining model type
+2021-05-24 20:25:42,957:INFO:model type: lda
+2021-05-24 20:25:42,957:INFO:Checking exceptions
+2021-05-24 20:25:42,957:INFO:Preloading libraries
+2021-05-24 20:25:42,958:INFO:Preparing display monitor
+2021-05-24 20:25:44,811:INFO:(2129, 20)
+2021-05-24 20:25:44,811:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:25:44,813:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:25:44,813:INFO:Fitting Model with num_topics = 32
+2021-05-24 20:25:44,852:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:25:44,856:INFO:Initializing create_model()
+2021-05-24 20:25:44,856:INFO:create_model(model=lda, multi_core=True, num_topics=32, verbose=False, system=True)
+2021-05-24 20:25:44,856:INFO:Checking exceptions
+2021-05-24 20:25:44,856:INFO:Preloading libraries
+2021-05-24 20:25:44,856:INFO:Preparing display monitor
+2021-05-24 20:25:44,863:INFO:Defining topic model
+2021-05-24 20:25:44,863:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:25:44,863:INFO:Defining num_topics parameter
+2021-05-24 20:25:44,863:INFO:num_topics set to: 32
+2021-05-24 20:25:44,864:INFO:LDA multi_core enabled
+2021-05-24 20:25:44,864:INFO:LdaMulticore imported successfully
+2021-05-24 20:25:48,219:INFO:LdaMulticore trained successfully
+2021-05-24 20:25:48,221:INFO:Creating MLFLow Logs
+2021-05-24 20:25:48,263:INFO:LdaModel(num_terms=1418, num_topics=32, decay=0.5, chunksize=100)
+2021-05-24 20:25:48,263:INFO:create_model() succesfully completed......................................
+2021-05-24 20:25:48,263:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:25:48,263:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:25:48,264:INFO:Initializing assign_model()
+2021-05-24 20:25:48,264:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=32, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:25:48,264:INFO:Determining model type
+2021-05-24 20:25:48,264:INFO:model type: lda
+2021-05-24 20:25:48,264:INFO:Checking exceptions
+2021-05-24 20:25:48,264:INFO:Preloading libraries
+2021-05-24 20:25:48,264:INFO:Preparing display monitor
+2021-05-24 20:25:50,195:INFO:(2129, 36)
+2021-05-24 20:25:50,195:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:25:50,199:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:25:50,200:INFO:Fitting Model with num_topics = 64
+2021-05-24 20:25:50,224:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:25:50,225:INFO:Initializing create_model()
+2021-05-24 20:25:50,225:INFO:create_model(model=lda, multi_core=True, num_topics=64, verbose=False, system=True)
+2021-05-24 20:25:50,225:INFO:Checking exceptions
+2021-05-24 20:25:50,225:INFO:Preloading libraries
+2021-05-24 20:25:50,225:INFO:Preparing display monitor
+2021-05-24 20:25:50,236:INFO:Defining topic model
+2021-05-24 20:25:50,237:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:25:50,237:INFO:Defining num_topics parameter
+2021-05-24 20:25:50,237:INFO:num_topics set to: 64
+2021-05-24 20:25:50,238:INFO:LDA multi_core enabled
+2021-05-24 20:25:50,238:INFO:LdaMulticore imported successfully
+2021-05-24 20:25:53,702:INFO:LdaMulticore trained successfully
+2021-05-24 20:25:53,704:INFO:Creating MLFLow Logs
+2021-05-24 20:25:53,751:INFO:LdaModel(num_terms=1418, num_topics=64, decay=0.5, chunksize=100)
+2021-05-24 20:25:53,751:INFO:create_model() succesfully completed......................................
+2021-05-24 20:25:53,751:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:25:53,751:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:25:53,752:INFO:Initializing assign_model()
+2021-05-24 20:25:53,752:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=64, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:25:53,752:INFO:Determining model type
+2021-05-24 20:25:53,752:INFO:model type: lda
+2021-05-24 20:25:53,752:INFO:Checking exceptions
+2021-05-24 20:25:53,752:INFO:Preloading libraries
+2021-05-24 20:25:53,752:INFO:Preparing display monitor
+2021-05-24 20:25:55,999:INFO:(2129, 68)
+2021-05-24 20:25:55,999:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:25:56,006:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:25:56,006:INFO:Fitting Model with num_topics = 100
+2021-05-24 20:25:56,015:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:25:56,015:INFO:Initializing create_model()
+2021-05-24 20:25:56,015:INFO:create_model(model=lda, multi_core=True, num_topics=100, verbose=False, system=True)
+2021-05-24 20:25:56,015:INFO:Checking exceptions
+2021-05-24 20:25:56,015:INFO:Preloading libraries
+2021-05-24 20:25:56,015:INFO:Preparing display monitor
+2021-05-24 20:25:56,022:INFO:Defining topic model
+2021-05-24 20:25:56,022:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:25:56,022:INFO:Defining num_topics parameter
+2021-05-24 20:25:56,022:INFO:num_topics set to: 100
+2021-05-24 20:25:56,023:INFO:LDA multi_core enabled
+2021-05-24 20:25:56,023:INFO:LdaMulticore imported successfully
+2021-05-24 20:26:00,041:INFO:LdaMulticore trained successfully
+2021-05-24 20:26:00,042:INFO:Creating MLFLow Logs
+2021-05-24 20:26:00,085:INFO:LdaModel(num_terms=1418, num_topics=100, decay=0.5, chunksize=100)
+2021-05-24 20:26:00,086:INFO:create_model() succesfully completed......................................
+2021-05-24 20:26:00,086:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:26:00,086:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:26:00,087:INFO:Initializing assign_model()
+2021-05-24 20:26:00,087:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=100, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:26:00,087:INFO:Determining model type
+2021-05-24 20:26:00,087:INFO:model type: lda
+2021-05-24 20:26:00,087:INFO:Checking exceptions
+2021-05-24 20:26:00,087:INFO:Preloading libraries
+2021-05-24 20:26:00,087:INFO:Preparing display monitor
+2021-05-24 20:26:03,081:INFO:(2129, 104)
+2021-05-24 20:26:03,081:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:26:03,090:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:26:03,090:INFO:Fitting Model with num_topics = 200
+2021-05-24 20:26:03,118:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:26:03,119:INFO:Initializing create_model()
+2021-05-24 20:26:03,119:INFO:create_model(model=lda, multi_core=True, num_topics=200, verbose=False, system=True)
+2021-05-24 20:26:03,119:INFO:Checking exceptions
+2021-05-24 20:26:03,119:INFO:Preloading libraries
+2021-05-24 20:26:03,119:INFO:Preparing display monitor
+2021-05-24 20:26:03,126:INFO:Defining topic model
+2021-05-24 20:26:03,126:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:26:03,126:INFO:Defining num_topics parameter
+2021-05-24 20:26:03,126:INFO:num_topics set to: 200
+2021-05-24 20:26:03,127:INFO:LDA multi_core enabled
+2021-05-24 20:26:03,127:INFO:LdaMulticore imported successfully
+2021-05-24 20:26:08,159:INFO:LdaMulticore trained successfully
+2021-05-24 20:26:08,161:INFO:Creating MLFLow Logs
+2021-05-24 20:26:08,273:INFO:LdaModel(num_terms=1418, num_topics=200, decay=0.5, chunksize=100)
+2021-05-24 20:26:08,273:INFO:create_model() succesfully completed......................................
+2021-05-24 20:26:08,273:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:26:08,273:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:26:08,274:INFO:Initializing assign_model()
+2021-05-24 20:26:08,274:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=200, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:26:08,274:INFO:Determining model type
+2021-05-24 20:26:08,274:INFO:model type: lda
+2021-05-24 20:26:08,274:INFO:Checking exceptions
+2021-05-24 20:26:08,274:INFO:Preloading libraries
+2021-05-24 20:26:08,274:INFO:Preparing display monitor
+2021-05-24 20:26:13,264:INFO:(2129, 204)
+2021-05-24 20:26:13,265:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:26:13,285:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:26:13,285:INFO:Fitting Model with num_topics = 300
+2021-05-24 20:26:13,291:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:26:13,292:INFO:Initializing create_model()
+2021-05-24 20:26:13,292:INFO:create_model(model=lda, multi_core=True, num_topics=300, verbose=False, system=True)
+2021-05-24 20:26:13,292:INFO:Checking exceptions
+2021-05-24 20:26:13,292:INFO:Preloading libraries
+2021-05-24 20:26:13,292:INFO:Preparing display monitor
+2021-05-24 20:26:13,307:INFO:Defining topic model
+2021-05-24 20:26:13,307:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:26:13,307:INFO:Defining num_topics parameter
+2021-05-24 20:26:13,307:INFO:num_topics set to: 300
+2021-05-24 20:26:13,308:INFO:LDA multi_core enabled
+2021-05-24 20:26:13,308:INFO:LdaMulticore imported successfully
+2021-05-24 20:26:20,863:INFO:LdaMulticore trained successfully
+2021-05-24 20:26:20,866:INFO:Creating MLFLow Logs
+2021-05-24 20:26:20,946:INFO:LdaModel(num_terms=1418, num_topics=300, decay=0.5, chunksize=100)
+2021-05-24 20:26:20,946:INFO:create_model() succesfully completed......................................
+2021-05-24 20:26:20,946:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:26:20,946:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:26:20,947:INFO:Initializing assign_model()
+2021-05-24 20:26:20,947:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=300, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:26:20,947:INFO:Determining model type
+2021-05-24 20:26:20,947:INFO:model type: lda
+2021-05-24 20:26:20,947:INFO:Checking exceptions
+2021-05-24 20:26:20,947:INFO:Preloading libraries
+2021-05-24 20:26:20,947:INFO:Preparing display monitor
+2021-05-24 20:26:27,945:INFO:(2129, 304)
+2021-05-24 20:26:27,945:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:26:27,972:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:26:27,972:INFO:Fitting Model with num_topics = 400
+2021-05-24 20:26:27,978:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:26:27,978:INFO:Initializing create_model()
+2021-05-24 20:26:27,978:INFO:create_model(model=lda, multi_core=True, num_topics=400, verbose=False, system=True)
+2021-05-24 20:26:27,978:INFO:Checking exceptions
+2021-05-24 20:26:27,978:INFO:Preloading libraries
+2021-05-24 20:26:27,978:INFO:Preparing display monitor
+2021-05-24 20:26:27,990:INFO:Defining topic model
+2021-05-24 20:26:27,991:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:26:27,991:INFO:Defining num_topics parameter
+2021-05-24 20:26:27,991:INFO:num_topics set to: 400
+2021-05-24 20:26:27,992:INFO:LDA multi_core enabled
+2021-05-24 20:26:27,992:INFO:LdaMulticore imported successfully
+2021-05-24 20:26:38,380:INFO:LdaMulticore trained successfully
+2021-05-24 20:26:38,382:INFO:Creating MLFLow Logs
+2021-05-24 20:26:38,444:INFO:LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100)
+2021-05-24 20:26:38,444:INFO:create_model() succesfully completed......................................
+2021-05-24 20:26:38,444:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:26:38,444:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:26:38,445:INFO:Initializing assign_model()
+2021-05-24 20:26:38,445:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:26:38,445:INFO:Determining model type
+2021-05-24 20:26:38,445:INFO:model type: lda
+2021-05-24 20:26:38,445:INFO:Checking exceptions
+2021-05-24 20:26:38,445:INFO:Preloading libraries
+2021-05-24 20:26:38,445:INFO:Preparing display monitor
+2021-05-24 20:26:46,764:INFO:(2129, 404)
+2021-05-24 20:26:46,764:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:26:46,801:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:26:46,801:INFO:Problem : Unsupervised
+2021-05-24 20:26:46,806:INFO:CoherenceModel imported successfully
+2021-05-24 20:26:46,806:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=2, decay=0.5, chunksize=100)
+2021-05-24 20:26:47,023:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100)
+2021-05-24 20:26:47,360:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=8, decay=0.5, chunksize=100)
+2021-05-24 20:26:48,135:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100)
+2021-05-24 20:26:49,729:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=32, decay=0.5, chunksize=100)
+2021-05-24 20:26:51,675:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=64, decay=0.5, chunksize=100)
+2021-05-24 20:26:55,386:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=100, decay=0.5, chunksize=100)
+2021-05-24 20:26:58,663:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=200, decay=0.5, chunksize=100)
+2021-05-24 20:27:00,806:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=300, decay=0.5, chunksize=100)
+2021-05-24 20:27:03,060:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100)
+2021-05-24 20:27:05,690:INFO:Creating metrics dataframe
+2021-05-24 20:27:05,692:INFO:Rendering Visual
+2021-05-24 20:27:05,757:INFO:Visual Rendered Successfully
+2021-05-24 20:27:05,770:INFO:LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100)
+2021-05-24 20:27:05,770:INFO:tune_model() succesfully completed......................................
+2021-05-24 20:27:56,284:INFO:Initializing create_model()
+2021-05-24 20:27:56,284:INFO:create_model(model=lda, multi_core=False, num_topics=400, verbose=True, system=True)
+2021-05-24 20:27:56,284:INFO:Checking exceptions
+2021-05-24 20:27:56,284:INFO:Preloading libraries
+2021-05-24 20:27:56,284:INFO:Preparing display monitor
+2021-05-24 20:27:56,304:INFO:Defining topic model
+2021-05-24 20:27:56,304:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:27:56,304:INFO:Defining num_topics parameter
+2021-05-24 20:27:56,305:INFO:num_topics set to: 400
+2021-05-24 20:27:56,314:INFO:LdaModel imported successfully
+2021-05-24 20:28:17,043:INFO:LdaModel trained successfully
+2021-05-24 20:28:17,044:INFO:Creating MLFLow Logs
+2021-05-24 20:28:17,103:INFO:LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100)
+2021-05-24 20:28:17,103:INFO:create_model() succesfully completed......................................
+2021-05-24 20:28:24,117:INFO:Initializing plot_model()
+2021-05-24 20:28:24,117:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100), plot=topic_distribution, topic_num=None, save=False, system=True)
+2021-05-24 20:28:24,117:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 20:28:24,117:INFO:Checking exceptions
+2021-05-24 20:28:24,117:INFO:Importing libraries
+2021-05-24 20:28:24,125:INFO:save_param set to False
+2021-05-24 20:28:24,125:INFO:plot type: topic_distribution
+2021-05-24 20:28:24,710:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:28:24,710:INFO:Initializing assign_model()
+2021-05-24 20:28:24,711:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:28:24,711:INFO:Determining model type
+2021-05-24 20:28:24,711:INFO:model type: lda
+2021-05-24 20:28:24,711:INFO:Checking exceptions
+2021-05-24 20:28:24,711:INFO:Preloading libraries
+2021-05-24 20:28:24,711:INFO:Preparing display monitor
+2021-05-24 20:28:31,875:INFO:(2129, 404)
+2021-05-24 20:28:31,875:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:28:31,904:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:28:31,915:INFO:Sorting Dataframe
+2021-05-24 20:28:31,917:INFO:Rendering Visual
+2021-05-24 20:28:31,958:INFO:Visual Rendered Successfully
+2021-05-24 20:28:31,958:INFO:plot_model() succesfully completed......................................
+2021-05-24 20:29:13,247:INFO:Initializing plot_model()
+2021-05-24 20:29:13,247:INFO:plot_model(model=None, plot=frequency, topic_num=None, save=False, system=True)
+2021-05-24 20:29:13,247:INFO:Checking exceptions
+2021-05-24 20:29:13,247:INFO:Importing libraries
+2021-05-24 20:29:13,254:INFO:save_param set to False
+2021-05-24 20:29:13,255:INFO:plot type: frequency
+2021-05-24 20:29:13,255:INFO:Rendering Visual
+2021-05-24 20:29:13,255:WARNING:topic_num set to None. Plot generated at corpus level.
+2021-05-24 20:29:13,255:INFO:Fitting CountVectorizer()
+2021-05-24 20:29:13,345:INFO:Visual Rendered Successfully
+2021-05-24 20:29:13,345:INFO:plot_model() succesfully completed......................................
+2021-05-24 20:29:39,175:INFO:Initializing plot_model()
+2021-05-24 20:29:39,175:INFO:plot_model(model=None, plot=bigram, topic_num=None, save=False, system=True)
+2021-05-24 20:29:39,175:INFO:Checking exceptions
+2021-05-24 20:29:39,175:INFO:Importing libraries
+2021-05-24 20:29:39,185:INFO:save_param set to False
+2021-05-24 20:29:39,185:INFO:plot type: bigram
+2021-05-24 20:29:39,185:WARNING:topic_num set to None. Plot generated at corpus level.
+2021-05-24 20:29:39,185:INFO:Fitting CountVectorizer()
+2021-05-24 20:29:39,262:INFO:Rendering Visual
+2021-05-24 20:29:39,297:INFO:Visual Rendered Successfully
+2021-05-24 20:29:39,297:INFO:plot_model() succesfully completed......................................
+2021-05-24 20:31:16,142:INFO:PyCaret NLP Module
+2021-05-24 20:31:16,142:INFO:version 2.3.1
+2021-05-24 20:31:16,142:INFO:Initializing setup()
+2021-05-24 20:31:16,142:INFO:USI: 6d1f
+2021-05-24 20:31:16,142:INFO:setup(data=(2129, 2), target=summerizedAnswers, custom_stopwords=['would', 'want', 'usd', 'many', 'also', 'make', 'find', 'see', 'say', 'often', 'much', 'go', 'come', 'thought', 'even', 'learn', 'happen', 'much', 'let', 'know', 'thing', 'need', 'take', 'get', 'try', 'ask', 'maybe', 'keep', 'end', 'way', 'suggest', 'likely', 'area', 'part', 'consider', 'right', 'able', 'could', 'tell', 'seem', 'use', 'sometimes', 'think', 'look', 'self', 'lot', 'new', 'well', 'give', 'start'], html=True, session_id=123, log_experiment=True,
+                    experiment_name=summerizedAnswers, log_plots=False, log_data=False, verbose=True)
+2021-05-24 20:31:16,142:INFO:Checking environment
+2021-05-24 20:31:16,143:INFO:python_version: 3.8.5
+2021-05-24 20:31:16,143:INFO:python_build: ('default', 'Jan 27 2021 15:41:15')
+2021-05-24 20:31:16,143:INFO:machine: x86_64
+2021-05-24 20:31:16,164:INFO:platform: Linux-5.8.0-53-generic-x86_64-with-glibc2.29
+2021-05-24 20:31:16,165:INFO:Memory: svmem(total=8157831168, available=4795539456, percent=41.2, used=2930434048, free=2799587328, active=3338485760, inactive=1418563584, buffers=193703936, cached=2234105856, shared=120156160, slab=358494208)
+2021-05-24 20:31:16,166:INFO:Physical Core: 2
+2021-05-24 20:31:16,166:INFO:Logical Core: 4
+2021-05-24 20:31:16,166:INFO:Checking libraries
+2021-05-24 20:31:16,166:INFO:pd==1.2.4
+2021-05-24 20:31:16,166:INFO:numpy==1.20.3
+2021-05-24 20:31:16,333:INFO:gensim==3.8.3
+2021-05-24 20:31:16,484:INFO:spacy==2.3.5
+2021-05-24 20:31:16,485:INFO:nltk==3.6.2
+2021-05-24 20:31:16,501:INFO:textblob==0.15.3
+2021-05-24 20:31:16,606:INFO:pyLDAvis==3.3.1
+2021-05-24 20:31:16,639:INFO:wordcloud==1.8.1
+2021-05-24 20:31:16,813:INFO:mlflow==1.17.0
+2021-05-24 20:31:16,813:INFO:Checking Exceptions
+2021-05-24 20:31:17,427:INFO:Preloading libraries
+2021-05-24 20:31:17,456:INFO:Preparing display monitor
+2021-05-24 20:31:17,472:INFO:Importing libraries
+2021-05-24 20:31:17,472:INFO:Declaring global variables
+2021-05-24 20:31:17,472:INFO:Input provided : dataframe
+2021-05-24 20:31:17,472:INFO:session_id set to : 123
+2021-05-24 20:31:17,472:INFO:Copying training dataset
+2021-05-24 20:31:17,473:INFO:Importing stopwords from nltk
+2021-05-24 20:31:21,336:INFO:Removing numeric characters from the text
+2021-05-24 20:31:21,356:INFO:Removing special characters from the text
+2021-05-24 20:31:21,394:INFO:Tokenizing Words
+2021-05-24 20:31:21,445:INFO:Removing stopwords
+2021-05-24 20:31:21,481:INFO:Extracting Bigrams
+2021-05-24 20:31:21,576:INFO:Extracting Trigrams
+2021-05-24 20:31:21,731:INFO:Lemmatizing tokens
+2021-05-24 20:31:28,604:INFO:Removing stopwords after lemmatizing
+2021-05-24 20:31:28,651:INFO:Creating corpus and dictionary
+2021-05-24 20:31:28,710:INFO:Compiling processed text
+2021-05-24 20:31:28,712:INFO:Compiling information grid
+2021-05-24 20:31:28,942:INFO:Creating MLFlow logs
+2021-05-24 20:31:29,023:INFO:setup() succesfully completed......................................
+2021-05-24 20:31:29,051:INFO:Initializing create_model()
+2021-05-24 20:31:29,052:INFO:create_model(model=lda, multi_core=False, num_topics=None, verbose=True, system=True)
+2021-05-24 20:31:29,052:INFO:Checking exceptions
+2021-05-24 20:31:29,052:INFO:Preloading libraries
+2021-05-24 20:31:29,052:INFO:Preparing display monitor
+2021-05-24 20:31:29,069:INFO:Defining topic model
+2021-05-24 20:31:29,069:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:31:29,069:INFO:Defining num_topics parameter
+2021-05-24 20:31:29,069:INFO:num_topics set to: 4
+2021-05-24 20:31:29,076:INFO:LdaModel imported successfully
+2021-05-24 20:31:32,051:INFO:LdaModel trained successfully
+2021-05-24 20:31:32,052:INFO:Creating MLFLow Logs
+2021-05-24 20:31:32,110:INFO:LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100)
+2021-05-24 20:31:32,111:INFO:create_model() succesfully completed......................................
+2021-05-24 20:31:32,117:INFO:Initializing tune_model()
+2021-05-24 20:31:32,118:INFO:tune_model(model=lda, multi_core=True, supervised_target=None, estimator=None, optimize=None, custom_grid=None, auto_fe=True, fold=10, verbose=True)
+2021-05-24 20:31:32,118:INFO:Checking exceptions
+2021-05-24 20:31:32,118:INFO:Preloading libraries
+2021-05-24 20:31:32,118:INFO:Preparing display monitor
+2021-05-24 20:31:32,146:INFO:Importing libraries
+2021-05-24 20:31:32,306:INFO:Objective : Unsupervised
+2021-05-24 20:31:32,307:INFO:Defining model name
+2021-05-24 20:31:32,307:INFO:Topic Model Name: Latent Dirichlet Allocation
+2021-05-24 20:31:32,307:INFO:Defining supervised estimator
+2021-05-24 20:31:32,307:INFO:Estimator: None
+2021-05-24 20:31:32,307:INFO:Defining Optimizer
+2021-05-24 20:31:32,307:INFO:Optimize: None
+2021-05-24 20:31:32,307:INFO:Defining Tuning Grid
+2021-05-24 20:31:32,308:INFO:Pre-defined Grid used
+2021-05-24 20:31:32,313:INFO:Fitting Model with num_topics = 2
+2021-05-24 20:31:32,320:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:31:32,320:INFO:Initializing create_model()
+2021-05-24 20:31:32,320:INFO:create_model(model=lda, multi_core=True, num_topics=2, verbose=False, system=True)
+2021-05-24 20:31:32,320:INFO:Checking exceptions
+2021-05-24 20:31:32,321:INFO:Preloading libraries
+2021-05-24 20:31:32,321:INFO:Preparing display monitor
+2021-05-24 20:31:32,329:INFO:Defining topic model
+2021-05-24 20:31:32,329:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:31:32,329:INFO:Defining num_topics parameter
+2021-05-24 20:31:32,330:INFO:num_topics set to: 2
+2021-05-24 20:31:32,330:INFO:LDA multi_core enabled
+2021-05-24 20:31:32,331:INFO:LdaMulticore imported successfully
+2021-05-24 20:31:35,956:INFO:LdaMulticore trained successfully
+2021-05-24 20:31:35,959:INFO:Creating MLFLow Logs
+2021-05-24 20:31:36,002:INFO:LdaModel(num_terms=1418, num_topics=2, decay=0.5, chunksize=100)
+2021-05-24 20:31:36,002:INFO:create_model() succesfully completed......................................
+2021-05-24 20:31:36,002:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:31:36,002:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:31:36,003:INFO:Initializing assign_model()
+2021-05-24 20:31:36,003:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=2, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:31:36,003:INFO:Determining model type
+2021-05-24 20:31:36,003:INFO:model type: lda
+2021-05-24 20:31:36,003:INFO:Checking exceptions
+2021-05-24 20:31:36,003:INFO:Preloading libraries
+2021-05-24 20:31:36,003:INFO:Preparing display monitor
+2021-05-24 20:31:37,252:INFO:(2129, 6)
+2021-05-24 20:31:37,252:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:31:37,253:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:31:37,253:INFO:Fitting Model with num_topics = 4
+2021-05-24 20:31:37,279:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:31:37,280:INFO:Initializing create_model()
+2021-05-24 20:31:37,284:INFO:create_model(model=lda, multi_core=True, num_topics=4, verbose=False, system=True)
+2021-05-24 20:31:37,284:INFO:Checking exceptions
+2021-05-24 20:31:37,284:INFO:Preloading libraries
+2021-05-24 20:31:37,284:INFO:Preparing display monitor
+2021-05-24 20:31:37,292:INFO:Defining topic model
+2021-05-24 20:31:37,292:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:31:37,292:INFO:Defining num_topics parameter
+2021-05-24 20:31:37,292:INFO:num_topics set to: 4
+2021-05-24 20:31:37,293:INFO:LDA multi_core enabled
+2021-05-24 20:31:37,293:INFO:LdaMulticore imported successfully
+2021-05-24 20:31:42,267:INFO:LdaMulticore trained successfully
+2021-05-24 20:31:42,269:INFO:Creating MLFLow Logs
+2021-05-24 20:31:42,319:INFO:LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100)
+2021-05-24 20:31:42,319:INFO:create_model() succesfully completed......................................
+2021-05-24 20:31:42,319:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:31:42,319:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:31:42,320:INFO:Initializing assign_model()
+2021-05-24 20:31:42,320:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:31:42,320:INFO:Determining model type
+2021-05-24 20:31:42,320:INFO:model type: lda
+2021-05-24 20:31:42,320:INFO:Checking exceptions
+2021-05-24 20:31:42,320:INFO:Preloading libraries
+2021-05-24 20:31:42,320:INFO:Preparing display monitor
+2021-05-24 20:31:43,707:INFO:(2129, 8)
+2021-05-24 20:31:43,708:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:31:43,708:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:31:43,709:INFO:Fitting Model with num_topics = 8
+2021-05-24 20:31:43,734:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:31:43,747:INFO:Initializing create_model()
+2021-05-24 20:31:43,747:INFO:create_model(model=lda, multi_core=True, num_topics=8, verbose=False, system=True)
+2021-05-24 20:31:43,751:INFO:Checking exceptions
+2021-05-24 20:31:43,756:INFO:Preloading libraries
+2021-05-24 20:31:43,756:INFO:Preparing display monitor
+2021-05-24 20:31:43,766:INFO:Defining topic model
+2021-05-24 20:31:43,766:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:31:43,766:INFO:Defining num_topics parameter
+2021-05-24 20:31:43,766:INFO:num_topics set to: 8
+2021-05-24 20:31:43,767:INFO:LDA multi_core enabled
+2021-05-24 20:31:43,767:INFO:LdaMulticore imported successfully
+2021-05-24 20:31:47,579:INFO:LdaMulticore trained successfully
+2021-05-24 20:31:47,582:INFO:Creating MLFLow Logs
+2021-05-24 20:31:47,640:INFO:LdaModel(num_terms=1418, num_topics=8, decay=0.5, chunksize=100)
+2021-05-24 20:31:47,640:INFO:create_model() succesfully completed......................................
+2021-05-24 20:31:47,641:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:31:47,641:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:31:47,641:INFO:Initializing assign_model()
+2021-05-24 20:31:47,642:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=8, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:31:47,642:INFO:Determining model type
+2021-05-24 20:31:47,642:INFO:model type: lda
+2021-05-24 20:31:47,642:INFO:Checking exceptions
+2021-05-24 20:31:47,642:INFO:Preloading libraries
+2021-05-24 20:31:47,642:INFO:Preparing display monitor
+2021-05-24 20:31:49,062:INFO:(2129, 12)
+2021-05-24 20:31:49,066:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:31:49,067:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:31:49,067:INFO:Fitting Model with num_topics = 16
+2021-05-24 20:31:49,101:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:31:49,101:INFO:Initializing create_model()
+2021-05-24 20:31:49,102:INFO:create_model(model=lda, multi_core=True, num_topics=16, verbose=False, system=True)
+2021-05-24 20:31:49,102:INFO:Checking exceptions
+2021-05-24 20:31:49,115:INFO:Preloading libraries
+2021-05-24 20:31:49,117:INFO:Preparing display monitor
+2021-05-24 20:31:49,127:INFO:Defining topic model
+2021-05-24 20:31:49,128:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:31:49,128:INFO:Defining num_topics parameter
+2021-05-24 20:31:49,128:INFO:num_topics set to: 16
+2021-05-24 20:31:49,128:INFO:LDA multi_core enabled
+2021-05-24 20:31:49,129:INFO:LdaMulticore imported successfully
+2021-05-24 20:31:52,680:INFO:LdaMulticore trained successfully
+2021-05-24 20:31:52,682:INFO:Creating MLFLow Logs
+2021-05-24 20:31:52,749:INFO:LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100)
+2021-05-24 20:31:52,750:INFO:create_model() succesfully completed......................................
+2021-05-24 20:31:52,750:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:31:52,750:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:31:52,751:INFO:Initializing assign_model()
+2021-05-24 20:31:52,751:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:31:52,751:INFO:Determining model type
+2021-05-24 20:31:52,751:INFO:model type: lda
+2021-05-24 20:31:52,751:INFO:Checking exceptions
+2021-05-24 20:31:52,751:INFO:Preloading libraries
+2021-05-24 20:31:52,751:INFO:Preparing display monitor
+2021-05-24 20:31:54,230:INFO:(2129, 20)
+2021-05-24 20:31:54,230:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:31:54,232:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:31:54,232:INFO:Fitting Model with num_topics = 32
+2021-05-24 20:31:54,274:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:31:54,274:INFO:Initializing create_model()
+2021-05-24 20:31:54,274:INFO:create_model(model=lda, multi_core=True, num_topics=32, verbose=False, system=True)
+2021-05-24 20:31:54,275:INFO:Checking exceptions
+2021-05-24 20:31:54,275:INFO:Preloading libraries
+2021-05-24 20:31:54,275:INFO:Preparing display monitor
+2021-05-24 20:31:54,297:INFO:Defining topic model
+2021-05-24 20:31:54,297:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:31:54,297:INFO:Defining num_topics parameter
+2021-05-24 20:31:54,304:INFO:num_topics set to: 32
+2021-05-24 20:31:54,341:INFO:LDA multi_core enabled
+2021-05-24 20:31:54,341:INFO:LdaMulticore imported successfully
+2021-05-24 20:31:57,909:INFO:LdaMulticore trained successfully
+2021-05-24 20:31:57,911:INFO:Creating MLFLow Logs
+2021-05-24 20:31:57,951:INFO:LdaModel(num_terms=1418, num_topics=32, decay=0.5, chunksize=100)
+2021-05-24 20:31:57,951:INFO:create_model() succesfully completed......................................
+2021-05-24 20:31:57,951:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:31:57,951:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:31:57,952:INFO:Initializing assign_model()
+2021-05-24 20:31:57,952:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=32, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:31:57,952:INFO:Determining model type
+2021-05-24 20:31:57,952:INFO:model type: lda
+2021-05-24 20:31:57,952:INFO:Checking exceptions
+2021-05-24 20:31:57,952:INFO:Preloading libraries
+2021-05-24 20:31:57,952:INFO:Preparing display monitor
+2021-05-24 20:31:59,737:INFO:(2129, 36)
+2021-05-24 20:31:59,737:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:31:59,740:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:31:59,740:INFO:Fitting Model with num_topics = 64
+2021-05-24 20:31:59,751:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:31:59,752:INFO:Initializing create_model()
+2021-05-24 20:31:59,752:INFO:create_model(model=lda, multi_core=True, num_topics=64, verbose=False, system=True)
+2021-05-24 20:31:59,752:INFO:Checking exceptions
+2021-05-24 20:31:59,752:INFO:Preloading libraries
+2021-05-24 20:31:59,752:INFO:Preparing display monitor
+2021-05-24 20:31:59,765:INFO:Defining topic model
+2021-05-24 20:31:59,765:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:31:59,766:INFO:Defining num_topics parameter
+2021-05-24 20:31:59,766:INFO:num_topics set to: 64
+2021-05-24 20:31:59,767:INFO:LDA multi_core enabled
+2021-05-24 20:31:59,767:INFO:LdaMulticore imported successfully
+2021-05-24 20:32:03,384:INFO:LdaMulticore trained successfully
+2021-05-24 20:32:03,385:INFO:Creating MLFLow Logs
+2021-05-24 20:32:03,433:INFO:LdaModel(num_terms=1418, num_topics=64, decay=0.5, chunksize=100)
+2021-05-24 20:32:03,433:INFO:create_model() succesfully completed......................................
+2021-05-24 20:32:03,433:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:32:03,433:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:32:03,434:INFO:Initializing assign_model()
+2021-05-24 20:32:03,434:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=64, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:32:03,434:INFO:Determining model type
+2021-05-24 20:32:03,434:INFO:model type: lda
+2021-05-24 20:32:03,434:INFO:Checking exceptions
+2021-05-24 20:32:03,434:INFO:Preloading libraries
+2021-05-24 20:32:03,434:INFO:Preparing display monitor
+2021-05-24 20:32:05,644:INFO:(2129, 68)
+2021-05-24 20:32:05,644:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:32:05,650:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:32:05,651:INFO:Fitting Model with num_topics = 100
+2021-05-24 20:32:05,668:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:32:05,674:INFO:Initializing create_model()
+2021-05-24 20:32:05,675:INFO:create_model(model=lda, multi_core=True, num_topics=100, verbose=False, system=True)
+2021-05-24 20:32:05,680:INFO:Checking exceptions
+2021-05-24 20:32:05,685:INFO:Preloading libraries
+2021-05-24 20:32:05,690:INFO:Preparing display monitor
+2021-05-24 20:32:05,706:INFO:Defining topic model
+2021-05-24 20:32:05,706:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:32:05,706:INFO:Defining num_topics parameter
+2021-05-24 20:32:05,706:INFO:num_topics set to: 100
+2021-05-24 20:32:05,707:INFO:LDA multi_core enabled
+2021-05-24 20:32:05,707:INFO:LdaMulticore imported successfully
+2021-05-24 20:32:09,722:INFO:LdaMulticore trained successfully
+2021-05-24 20:32:09,723:INFO:Creating MLFLow Logs
+2021-05-24 20:32:09,764:INFO:LdaModel(num_terms=1418, num_topics=100, decay=0.5, chunksize=100)
+2021-05-24 20:32:09,764:INFO:create_model() succesfully completed......................................
+2021-05-24 20:32:09,764:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:32:09,765:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:32:09,765:INFO:Initializing assign_model()
+2021-05-24 20:32:09,765:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=100, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:32:09,765:INFO:Determining model type
+2021-05-24 20:32:09,765:INFO:model type: lda
+2021-05-24 20:32:09,765:INFO:Checking exceptions
+2021-05-24 20:32:09,765:INFO:Preloading libraries
+2021-05-24 20:32:09,766:INFO:Preparing display monitor
+2021-05-24 20:32:12,781:INFO:(2129, 104)
+2021-05-24 20:32:12,781:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:32:12,790:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:32:12,790:INFO:Fitting Model with num_topics = 200
+2021-05-24 20:32:12,796:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:32:12,796:INFO:Initializing create_model()
+2021-05-24 20:32:12,796:INFO:create_model(model=lda, multi_core=True, num_topics=200, verbose=False, system=True)
+2021-05-24 20:32:12,796:INFO:Checking exceptions
+2021-05-24 20:32:12,796:INFO:Preloading libraries
+2021-05-24 20:32:12,796:INFO:Preparing display monitor
+2021-05-24 20:32:12,803:INFO:Defining topic model
+2021-05-24 20:32:12,804:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:32:12,804:INFO:Defining num_topics parameter
+2021-05-24 20:32:12,804:INFO:num_topics set to: 200
+2021-05-24 20:32:12,805:INFO:LDA multi_core enabled
+2021-05-24 20:32:12,805:INFO:LdaMulticore imported successfully
+2021-05-24 20:32:18,759:INFO:LdaMulticore trained successfully
+2021-05-24 20:32:18,760:INFO:Creating MLFLow Logs
+2021-05-24 20:32:18,824:INFO:LdaModel(num_terms=1418, num_topics=200, decay=0.5, chunksize=100)
+2021-05-24 20:32:18,824:INFO:create_model() succesfully completed......................................
+2021-05-24 20:32:18,824:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:32:18,824:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:32:18,825:INFO:Initializing assign_model()
+2021-05-24 20:32:18,825:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=200, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:32:18,825:INFO:Determining model type
+2021-05-24 20:32:18,825:INFO:model type: lda
+2021-05-24 20:32:18,826:INFO:Checking exceptions
+2021-05-24 20:32:18,826:INFO:Preloading libraries
+2021-05-24 20:32:18,826:INFO:Preparing display monitor
+2021-05-24 20:32:24,204:INFO:(2129, 204)
+2021-05-24 20:32:24,204:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:32:24,220:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:32:24,220:INFO:Fitting Model with num_topics = 300
+2021-05-24 20:32:24,225:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:32:24,226:INFO:Initializing create_model()
+2021-05-24 20:32:24,226:INFO:create_model(model=lda, multi_core=True, num_topics=300, verbose=False, system=True)
+2021-05-24 20:32:24,226:INFO:Checking exceptions
+2021-05-24 20:32:24,226:INFO:Preloading libraries
+2021-05-24 20:32:24,227:INFO:Preparing display monitor
+2021-05-24 20:32:24,235:INFO:Defining topic model
+2021-05-24 20:32:24,235:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:32:24,235:INFO:Defining num_topics parameter
+2021-05-24 20:32:24,235:INFO:num_topics set to: 300
+2021-05-24 20:32:24,236:INFO:LDA multi_core enabled
+2021-05-24 20:32:24,236:INFO:LdaMulticore imported successfully
+2021-05-24 20:32:32,113:INFO:LdaMulticore trained successfully
+2021-05-24 20:32:32,115:INFO:Creating MLFLow Logs
+2021-05-24 20:32:32,170:INFO:LdaModel(num_terms=1418, num_topics=300, decay=0.5, chunksize=100)
+2021-05-24 20:32:32,170:INFO:create_model() succesfully completed......................................
+2021-05-24 20:32:32,171:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:32:32,171:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:32:32,172:INFO:Initializing assign_model()
+2021-05-24 20:32:32,172:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=300, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:32:32,172:INFO:Determining model type
+2021-05-24 20:32:32,172:INFO:model type: lda
+2021-05-24 20:32:32,172:INFO:Checking exceptions
+2021-05-24 20:32:32,172:INFO:Preloading libraries
+2021-05-24 20:32:32,172:INFO:Preparing display monitor
+2021-05-24 20:32:38,333:INFO:(2129, 304)
+2021-05-24 20:32:38,333:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:32:38,355:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:32:38,356:INFO:Fitting Model with num_topics = 400
+2021-05-24 20:32:38,361:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:32:38,361:INFO:Initializing create_model()
+2021-05-24 20:32:38,362:INFO:create_model(model=lda, multi_core=True, num_topics=400, verbose=False, system=True)
+2021-05-24 20:32:38,362:INFO:Checking exceptions
+2021-05-24 20:32:38,362:INFO:Preloading libraries
+2021-05-24 20:32:38,362:INFO:Preparing display monitor
+2021-05-24 20:32:38,374:INFO:Defining topic model
+2021-05-24 20:32:38,374:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:32:38,374:INFO:Defining num_topics parameter
+2021-05-24 20:32:38,374:INFO:num_topics set to: 400
+2021-05-24 20:32:38,375:INFO:LDA multi_core enabled
+2021-05-24 20:32:38,376:INFO:LdaMulticore imported successfully
+2021-05-24 20:32:47,742:INFO:LdaMulticore trained successfully
+2021-05-24 20:32:47,743:INFO:Creating MLFLow Logs
+2021-05-24 20:32:47,809:INFO:LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100)
+2021-05-24 20:32:47,809:INFO:create_model() succesfully completed......................................
+2021-05-24 20:32:47,810:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:32:47,810:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:32:47,811:INFO:Initializing assign_model()
+2021-05-24 20:32:47,811:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:32:47,811:INFO:Determining model type
+2021-05-24 20:32:47,811:INFO:model type: lda
+2021-05-24 20:32:47,811:INFO:Checking exceptions
+2021-05-24 20:32:47,811:INFO:Preloading libraries
+2021-05-24 20:32:47,811:INFO:Preparing display monitor
+2021-05-24 20:32:55,291:INFO:(2129, 404)
+2021-05-24 20:32:55,291:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:32:55,321:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:32:55,321:INFO:Problem : Unsupervised
+2021-05-24 20:32:55,325:INFO:CoherenceModel imported successfully
+2021-05-24 20:32:55,325:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=2, decay=0.5, chunksize=100)
+2021-05-24 20:32:55,505:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100)
+2021-05-24 20:32:55,767:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=8, decay=0.5, chunksize=100)
+2021-05-24 20:32:56,214:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100)
+2021-05-24 20:32:57,061:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=32, decay=0.5, chunksize=100)
+2021-05-24 20:32:58,735:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=64, decay=0.5, chunksize=100)
+2021-05-24 20:33:02,164:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=100, decay=0.5, chunksize=100)
+2021-05-24 20:33:06,062:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=200, decay=0.5, chunksize=100)
+2021-05-24 20:33:08,385:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=300, decay=0.5, chunksize=100)
+2021-05-24 20:33:11,084:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100)
+2021-05-24 20:33:14,767:INFO:Creating metrics dataframe
+2021-05-24 20:33:14,781:INFO:Rendering Visual
+2021-05-24 20:33:15,194:INFO:Visual Rendered Successfully
+2021-05-24 20:33:15,212:INFO:LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100)
+2021-05-24 20:33:15,212:INFO:tune_model() succesfully completed......................................
+2021-05-24 20:33:15,239:INFO:Initializing plot_model()
+2021-05-24 20:33:15,239:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100), plot=topic_distribution, topic_num=None, save=False, system=True)
+2021-05-24 20:33:15,239:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 20:33:15,239:INFO:Checking exceptions
+2021-05-24 20:33:15,239:INFO:Importing libraries
+2021-05-24 20:33:15,250:INFO:save_param set to False
+2021-05-24 20:33:15,250:INFO:plot type: topic_distribution
+2021-05-24 20:33:15,253:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:33:15,256:INFO:Initializing assign_model()
+2021-05-24 20:33:15,256:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:33:15,256:INFO:Determining model type
+2021-05-24 20:33:15,256:INFO:model type: lda
+2021-05-24 20:33:15,256:INFO:Checking exceptions
+2021-05-24 20:33:15,256:INFO:Preloading libraries
+2021-05-24 20:33:15,256:INFO:Preparing display monitor
+2021-05-24 20:33:17,436:INFO:(2129, 8)
+2021-05-24 20:33:17,436:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:33:17,436:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:33:17,457:INFO:Sorting Dataframe
+2021-05-24 20:33:17,460:INFO:Rendering Visual
+2021-05-24 20:33:17,587:INFO:Visual Rendered Successfully
+2021-05-24 20:33:17,587:INFO:plot_model() succesfully completed......................................
+2021-05-24 20:33:17,592:INFO:Initializing plot_model()
+2021-05-24 20:33:17,592:INFO:plot_model(model=None, plot=frequency, topic_num=None, save=False, system=True)
+2021-05-24 20:33:17,592:INFO:Checking exceptions
+2021-05-24 20:33:17,592:INFO:Importing libraries
+2021-05-24 20:33:17,602:INFO:save_param set to False
+2021-05-24 20:33:17,602:INFO:plot type: frequency
+2021-05-24 20:33:17,602:INFO:Rendering Visual
+2021-05-24 20:33:17,603:WARNING:topic_num set to None. Plot generated at corpus level.
+2021-05-24 20:33:17,603:INFO:Fitting CountVectorizer()
+2021-05-24 20:33:17,663:INFO:Visual Rendered Successfully
+2021-05-24 20:33:17,664:INFO:plot_model() succesfully completed......................................
+2021-05-24 20:33:17,668:INFO:Initializing plot_model()
+2021-05-24 20:33:17,668:INFO:plot_model(model=None, plot=bigram, topic_num=None, save=False, system=True)
+2021-05-24 20:33:17,668:INFO:Checking exceptions
+2021-05-24 20:33:17,668:INFO:Importing libraries
+2021-05-24 20:33:17,677:INFO:save_param set to False
+2021-05-24 20:33:17,677:INFO:plot type: bigram
+2021-05-24 20:33:17,677:WARNING:topic_num set to None. Plot generated at corpus level.
+2021-05-24 20:33:17,677:INFO:Fitting CountVectorizer()
+2021-05-24 20:33:17,721:INFO:Rendering Visual
+2021-05-24 20:33:17,761:INFO:Visual Rendered Successfully
+2021-05-24 20:33:17,762:INFO:plot_model() succesfully completed......................................
+2021-05-24 20:33:17,774:INFO:Initializing plot_model()
+2021-05-24 20:33:17,774:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100), plot=tsne, topic_num=None, save=False, system=True)
+2021-05-24 20:33:17,774:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 20:33:17,774:INFO:Checking exceptions
+2021-05-24 20:33:17,774:INFO:Importing libraries
+2021-05-24 20:33:17,780:INFO:save_param set to False
+2021-05-24 20:33:17,780:INFO:plot type: tsne
+2021-05-24 20:33:17,780:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:33:17,781:INFO:Initializing assign_model()
+2021-05-24 20:33:17,781:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:33:17,782:INFO:Determining model type
+2021-05-24 20:33:17,782:INFO:model type: lda
+2021-05-24 20:33:17,782:INFO:Checking exceptions
+2021-05-24 20:33:17,782:INFO:Preloading libraries
+2021-05-24 20:33:17,782:INFO:Preparing display monitor
+2021-05-24 20:33:19,590:INFO:(2129, 8)
+2021-05-24 20:33:19,590:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:33:19,591:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:33:19,595:INFO:Fitting TSNE()
+2021-05-24 20:33:48,324:INFO:Sorting Dataframe
+2021-05-24 20:33:48,330:INFO:Rendering Visual
+2021-05-24 20:33:48,570:INFO:Visual Rendered Successfully
+2021-05-24 20:33:48,571:INFO:plot_model() succesfully completed......................................
+2021-05-24 20:33:48,577:INFO:Initializing plot_model()
+2021-05-24 20:33:48,578:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100), plot=umap, topic_num=None, save=False, system=True)
+2021-05-24 20:33:48,578:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 20:33:48,578:INFO:Checking exceptions
+2021-05-24 20:33:48,578:INFO:Importing libraries
+2021-05-24 20:33:48,595:INFO:save_param set to False
+2021-05-24 20:33:48,595:INFO:plot type: umap
+2021-05-24 20:34:04,745:INFO:Fitting TfidfVectorizer()
+2021-05-24 20:34:04,760:INFO:Fitting KMeans()
+2021-05-24 20:34:04,993:INFO:Fitting UMAP()
+2021-05-24 20:34:17,824:INFO:Rendering Visual
+2021-05-24 20:34:17,959:INFO:Visual Rendered Successfully
+2021-05-24 20:34:17,959:INFO:plot_model() succesfully completed......................................
+2021-05-24 20:36:45,174:INFO:Initializing create_model()
+2021-05-24 20:36:45,174:INFO:create_model(model=lda, multi_core=False, num_topics=400, verbose=True, system=True)
+2021-05-24 20:36:45,174:INFO:Checking exceptions
+2021-05-24 20:36:45,174:INFO:Preloading libraries
+2021-05-24 20:36:45,175:INFO:Preparing display monitor
+2021-05-24 20:36:45,198:INFO:Defining topic model
+2021-05-24 20:36:45,198:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:36:45,198:INFO:Defining num_topics parameter
+2021-05-24 20:36:45,198:INFO:num_topics set to: 400
+2021-05-24 20:36:45,206:INFO:LdaModel imported successfully
+2021-05-24 20:37:06,057:INFO:LdaModel trained successfully
+2021-05-24 20:37:06,058:INFO:Creating MLFLow Logs
+2021-05-24 20:37:06,123:INFO:LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100)
+2021-05-24 20:37:06,123:INFO:create_model() succesfully completed......................................
+2021-05-24 20:37:13,523:INFO:Initializing plot_model()
+2021-05-24 20:37:13,523:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100), plot=topic_distribution, topic_num=None, save=False, system=True)
+2021-05-24 20:37:13,523:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 20:37:13,523:INFO:Checking exceptions
+2021-05-24 20:37:13,523:INFO:Importing libraries
+2021-05-24 20:37:13,532:INFO:save_param set to False
+2021-05-24 20:37:13,532:INFO:plot type: topic_distribution
+2021-05-24 20:37:14,196:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:37:14,196:INFO:Initializing assign_model()
+2021-05-24 20:37:14,196:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:37:14,196:INFO:Determining model type
+2021-05-24 20:37:14,196:INFO:model type: lda
+2021-05-24 20:37:14,196:INFO:Checking exceptions
+2021-05-24 20:37:14,196:INFO:Preloading libraries
+2021-05-24 20:37:14,197:INFO:Preparing display monitor
+2021-05-24 20:37:21,472:INFO:(2129, 404)
+2021-05-24 20:37:21,472:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:37:21,507:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:37:21,517:INFO:Sorting Dataframe
+2021-05-24 20:37:21,518:INFO:Rendering Visual
+2021-05-24 20:37:21,560:INFO:Visual Rendered Successfully
+2021-05-24 20:37:21,560:INFO:plot_model() succesfully completed......................................
+2021-05-24 20:37:35,697:INFO:Initializing create_model()
+2021-05-24 20:37:35,698:INFO:create_model(model=lda, multi_core=False, num_topics=16, verbose=True, system=True)
+2021-05-24 20:37:35,699:INFO:Checking exceptions
+2021-05-24 20:37:35,699:INFO:Preloading libraries
+2021-05-24 20:37:35,699:INFO:Preparing display monitor
+2021-05-24 20:37:35,722:INFO:Defining topic model
+2021-05-24 20:37:35,722:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:37:35,722:INFO:Defining num_topics parameter
+2021-05-24 20:37:35,722:INFO:num_topics set to: 16
+2021-05-24 20:37:35,732:INFO:LdaModel imported successfully
+2021-05-24 20:37:38,690:INFO:LdaModel trained successfully
+2021-05-24 20:37:38,691:INFO:Creating MLFLow Logs
+2021-05-24 20:37:38,743:INFO:LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100)
+2021-05-24 20:37:38,743:INFO:create_model() succesfully completed......................................
+2021-05-24 20:37:43,407:INFO:Initializing plot_model()
+2021-05-24 20:37:43,407:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100), plot=topic_distribution, topic_num=None, save=False, system=True)
+2021-05-24 20:37:43,407:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 20:37:43,407:INFO:Checking exceptions
+2021-05-24 20:37:43,408:INFO:Importing libraries
+2021-05-24 20:37:43,415:INFO:save_param set to False
+2021-05-24 20:37:43,415:INFO:plot type: topic_distribution
+2021-05-24 20:37:43,419:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:37:43,420:INFO:Initializing assign_model()
+2021-05-24 20:37:43,420:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:37:43,420:INFO:Determining model type
+2021-05-24 20:37:43,420:INFO:model type: lda
+2021-05-24 20:37:43,420:INFO:Checking exceptions
+2021-05-24 20:37:43,420:INFO:Preloading libraries
+2021-05-24 20:37:43,420:INFO:Preparing display monitor
+2021-05-24 20:37:45,188:INFO:(2129, 20)
+2021-05-24 20:37:45,188:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:37:45,189:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:37:45,198:INFO:Sorting Dataframe
+2021-05-24 20:37:45,200:INFO:Rendering Visual
+2021-05-24 20:37:45,271:INFO:Visual Rendered Successfully
+2021-05-24 20:37:45,271:INFO:plot_model() succesfully completed......................................
+2021-05-24 20:38:15,748:INFO:Initializing plot_model()
+2021-05-24 20:38:15,749:INFO:plot_model(model=None, plot=frequency, topic_num=None, save=False, system=True)
+2021-05-24 20:38:15,749:INFO:Checking exceptions
+2021-05-24 20:38:15,749:INFO:Importing libraries
+2021-05-24 20:38:15,761:INFO:save_param set to False
+2021-05-24 20:38:15,762:INFO:plot type: frequency
+2021-05-24 20:38:15,762:INFO:Rendering Visual
+2021-05-24 20:38:15,762:WARNING:topic_num set to None. Plot generated at corpus level.
+2021-05-24 20:38:15,762:INFO:Fitting CountVectorizer()
+2021-05-24 20:38:15,840:INFO:Visual Rendered Successfully
+2021-05-24 20:38:15,840:INFO:plot_model() succesfully completed......................................
+2021-05-24 20:38:28,807:INFO:Initializing plot_model()
+2021-05-24 20:38:28,808:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100), plot=tsne, topic_num=None, save=False, system=True)
+2021-05-24 20:38:28,808:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 20:38:28,808:INFO:Checking exceptions
+2021-05-24 20:38:28,808:INFO:Importing libraries
+2021-05-24 20:38:28,815:INFO:save_param set to False
+2021-05-24 20:38:28,815:INFO:plot type: tsne
+2021-05-24 20:38:28,815:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:38:28,816:INFO:Initializing assign_model()
+2021-05-24 20:38:28,816:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:38:28,816:INFO:Determining model type
+2021-05-24 20:38:28,816:INFO:model type: lda
+2021-05-24 20:38:28,816:INFO:Checking exceptions
+2021-05-24 20:38:28,816:INFO:Preloading libraries
+2021-05-24 20:38:28,816:INFO:Preparing display monitor
+2021-05-24 20:38:30,265:INFO:(2129, 20)
+2021-05-24 20:38:30,265:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:38:30,267:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:38:30,273:INFO:Fitting TSNE()
+2021-05-24 20:38:55,075:INFO:Sorting Dataframe
+2021-05-24 20:38:55,081:INFO:Rendering Visual
+2021-05-24 20:38:55,236:INFO:Visual Rendered Successfully
+2021-05-24 20:38:55,236:INFO:plot_model() succesfully completed......................................
+2021-05-24 20:40:27,147:INFO:Initializing plot_model()
+2021-05-24 20:40:27,148:INFO:plot_model(model=None, plot=bigram, topic_num=None, save=False, system=True)
+2021-05-24 20:40:27,148:INFO:Checking exceptions
+2021-05-24 20:40:27,148:INFO:Importing libraries
+2021-05-24 20:40:27,160:INFO:save_param set to False
+2021-05-24 20:40:27,160:INFO:plot type: bigram
+2021-05-24 20:40:27,160:WARNING:topic_num set to None. Plot generated at corpus level.
+2021-05-24 20:40:27,160:INFO:Fitting CountVectorizer()
+2021-05-24 20:40:27,232:INFO:Rendering Visual
+2021-05-24 20:40:27,266:INFO:Visual Rendered Successfully
+2021-05-24 20:40:27,266:INFO:plot_model() succesfully completed......................................
+2021-05-24 20:40:46,669:INFO:Initializing tune_model()
+2021-05-24 20:40:46,669:INFO:tune_model(model=lda, multi_core=True, supervised_target=answerText, estimator=None, optimize=None, custom_grid=None, auto_fe=True, fold=10, verbose=True)
+2021-05-24 20:40:46,670:INFO:Checking exceptions
+2021-05-24 20:43:35,075:INFO:Initializing tune_model()
+2021-05-24 20:43:35,078:INFO:tune_model(model=lda, multi_core=True, supervised_target=0              If feel worthless, maybe need change life.
+1                  What I improve feelings worthlessness?
+2                                      find purpose life?
+3       Depression self esteem two common mental healt...
+4                                                   help?
+                              ...                        
+2124               There many different types therapists.
+2125                             get know another person?
+2126    If looking mental health professional help pro...
+2127    A good therapist listen say work find best way...
+2128    Have ever wondered would like relationship the...
+Name: summerizedAnswers, Length: 2129, dtype: object, estimator=None, optimize=None, custom_grid=None, auto_fe=True, fold=10, verbose=True)
+2021-05-24 20:43:35,078:INFO:Checking exceptions
+2021-05-24 20:44:15,664:INFO:Initializing tune_model()
+2021-05-24 20:44:15,664:INFO:tune_model(model=lda, multi_core=True, supervised_target=sumans_without_stopwords, estimator=None, optimize=None, custom_grid=None, auto_fe=True, fold=10, verbose=True)
+2021-05-24 20:44:15,664:INFO:Checking exceptions
+2021-05-24 20:44:15,664:INFO:Preloading libraries
+2021-05-24 20:44:15,665:INFO:Preparing display monitor
+2021-05-24 20:44:15,696:INFO:Importing libraries
+2021-05-24 20:44:15,705:INFO:Objective : Regression
+2021-05-24 20:44:15,705:INFO:Defining model name
+2021-05-24 20:44:15,705:INFO:Topic Model Name: Latent Dirichlet Allocation
+2021-05-24 20:44:15,705:INFO:Defining supervised estimator
+2021-05-24 20:44:15,705:INFO:Estimator: lr
+2021-05-24 20:44:15,705:INFO:Defining Optimizer
+2021-05-24 20:44:15,705:INFO:Optimize: R2
+2021-05-24 20:44:15,706:INFO:Problem : Supervised
+2021-05-24 20:44:15,706:INFO:auto_fe param set to True
+2021-05-24 20:44:15,724:INFO:Extracting Polarity
+2021-05-24 20:44:16,190:INFO:Extracting Subjectivity
+2021-05-24 20:44:16,488:INFO:Extracting Wordcount
+2021-05-24 20:44:16,489:INFO:Defining Tuning Grid
+2021-05-24 20:44:16,489:INFO:Pre-defined Grid used
+2021-05-24 20:44:16,494:INFO:Fitting Model with num_topics = 2
+2021-05-24 20:44:16,500:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:44:16,500:INFO:Initializing create_model()
+2021-05-24 20:44:16,500:INFO:create_model(model=lda, multi_core=True, num_topics=2, verbose=False, system=True)
+2021-05-24 20:44:16,500:INFO:Checking exceptions
+2021-05-24 20:44:16,500:INFO:Preloading libraries
+2021-05-24 20:44:16,501:INFO:Preparing display monitor
+2021-05-24 20:44:16,508:INFO:Defining topic model
+2021-05-24 20:44:16,509:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:44:16,509:INFO:Defining num_topics parameter
+2021-05-24 20:44:16,509:INFO:num_topics set to: 2
+2021-05-24 20:44:16,510:INFO:LDA multi_core enabled
+2021-05-24 20:44:16,510:INFO:LdaMulticore imported successfully
+2021-05-24 20:44:19,999:INFO:LdaMulticore trained successfully
+2021-05-24 20:44:20,001:INFO:Creating MLFLow Logs
+2021-05-24 20:44:20,046:INFO:LdaModel(num_terms=1418, num_topics=2, decay=0.5, chunksize=100)
+2021-05-24 20:44:20,046:INFO:create_model() succesfully completed......................................
+2021-05-24 20:44:20,046:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:44:20,046:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:44:20,047:INFO:Initializing assign_model()
+2021-05-24 20:44:20,047:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=2, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:44:20,047:INFO:Determining model type
+2021-05-24 20:44:20,047:INFO:model type: lda
+2021-05-24 20:44:20,047:INFO:Checking exceptions
+2021-05-24 20:44:20,047:INFO:Preloading libraries
+2021-05-24 20:44:20,047:INFO:Preparing display monitor
+2021-05-24 20:44:21,567:INFO:(2129, 6)
+2021-05-24 20:44:21,568:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:44:21,568:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:44:21,570:INFO:Fitting Model with num_topics = 4
+2021-05-24 20:44:21,607:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:44:21,621:INFO:Initializing create_model()
+2021-05-24 20:44:21,622:INFO:create_model(model=lda, multi_core=True, num_topics=4, verbose=False, system=True)
+2021-05-24 20:44:21,633:INFO:Checking exceptions
+2021-05-24 20:44:21,634:INFO:Preloading libraries
+2021-05-24 20:44:21,634:INFO:Preparing display monitor
+2021-05-24 20:44:21,644:INFO:Defining topic model
+2021-05-24 20:44:21,644:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:44:21,644:INFO:Defining num_topics parameter
+2021-05-24 20:44:21,645:INFO:num_topics set to: 4
+2021-05-24 20:44:21,646:INFO:LDA multi_core enabled
+2021-05-24 20:44:21,646:INFO:LdaMulticore imported successfully
+2021-05-24 20:44:26,021:INFO:LdaMulticore trained successfully
+2021-05-24 20:44:26,023:INFO:Creating MLFLow Logs
+2021-05-24 20:44:26,065:INFO:LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100)
+2021-05-24 20:44:26,066:INFO:create_model() succesfully completed......................................
+2021-05-24 20:44:26,066:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:44:26,066:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:44:26,067:INFO:Initializing assign_model()
+2021-05-24 20:44:26,067:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=4, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:44:26,067:INFO:Determining model type
+2021-05-24 20:44:26,067:INFO:model type: lda
+2021-05-24 20:44:26,067:INFO:Checking exceptions
+2021-05-24 20:44:26,067:INFO:Preloading libraries
+2021-05-24 20:44:26,067:INFO:Preparing display monitor
+2021-05-24 20:44:27,805:INFO:(2129, 8)
+2021-05-24 20:44:27,806:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:44:27,806:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:44:27,810:INFO:Fitting Model with num_topics = 8
+2021-05-24 20:44:27,841:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:44:27,842:INFO:Initializing create_model()
+2021-05-24 20:44:27,842:INFO:create_model(model=lda, multi_core=True, num_topics=8, verbose=False, system=True)
+2021-05-24 20:44:27,842:INFO:Checking exceptions
+2021-05-24 20:44:27,842:INFO:Preloading libraries
+2021-05-24 20:44:27,842:INFO:Preparing display monitor
+2021-05-24 20:44:27,851:INFO:Defining topic model
+2021-05-24 20:44:27,851:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:44:27,851:INFO:Defining num_topics parameter
+2021-05-24 20:44:27,851:INFO:num_topics set to: 8
+2021-05-24 20:44:27,852:INFO:LDA multi_core enabled
+2021-05-24 20:44:27,852:INFO:LdaMulticore imported successfully
+2021-05-24 20:44:32,327:INFO:LdaMulticore trained successfully
+2021-05-24 20:44:32,331:INFO:Creating MLFLow Logs
+2021-05-24 20:44:32,389:INFO:LdaModel(num_terms=1418, num_topics=8, decay=0.5, chunksize=100)
+2021-05-24 20:44:32,389:INFO:create_model() succesfully completed......................................
+2021-05-24 20:44:32,389:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:44:32,389:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:44:32,391:INFO:Initializing assign_model()
+2021-05-24 20:44:32,391:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=8, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:44:32,391:INFO:Determining model type
+2021-05-24 20:44:32,391:INFO:model type: lda
+2021-05-24 20:44:32,391:INFO:Checking exceptions
+2021-05-24 20:44:32,391:INFO:Preloading libraries
+2021-05-24 20:44:32,391:INFO:Preparing display monitor
+2021-05-24 20:44:34,165:INFO:(2129, 12)
+2021-05-24 20:44:34,165:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:44:34,167:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:44:34,170:INFO:Fitting Model with num_topics = 16
+2021-05-24 20:44:34,199:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:44:34,199:INFO:Initializing create_model()
+2021-05-24 20:44:34,200:INFO:create_model(model=lda, multi_core=True, num_topics=16, verbose=False, system=True)
+2021-05-24 20:44:34,200:INFO:Checking exceptions
+2021-05-24 20:44:34,200:INFO:Preloading libraries
+2021-05-24 20:44:34,200:INFO:Preparing display monitor
+2021-05-24 20:44:34,211:INFO:Defining topic model
+2021-05-24 20:44:34,212:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:44:34,212:INFO:Defining num_topics parameter
+2021-05-24 20:44:34,212:INFO:num_topics set to: 16
+2021-05-24 20:44:34,213:INFO:LDA multi_core enabled
+2021-05-24 20:44:34,213:INFO:LdaMulticore imported successfully
+2021-05-24 20:44:37,798:INFO:LdaMulticore trained successfully
+2021-05-24 20:44:37,801:INFO:Creating MLFLow Logs
+2021-05-24 20:44:37,845:INFO:LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100)
+2021-05-24 20:44:37,845:INFO:create_model() succesfully completed......................................
+2021-05-24 20:44:37,846:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:44:37,846:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:44:37,846:INFO:Initializing assign_model()
+2021-05-24 20:44:37,847:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:44:37,847:INFO:Determining model type
+2021-05-24 20:44:37,847:INFO:model type: lda
+2021-05-24 20:44:37,847:INFO:Checking exceptions
+2021-05-24 20:44:37,847:INFO:Preloading libraries
+2021-05-24 20:44:37,847:INFO:Preparing display monitor
+2021-05-24 20:44:39,679:INFO:(2129, 20)
+2021-05-24 20:44:39,680:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:44:39,681:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:44:39,684:INFO:Fitting Model with num_topics = 32
+2021-05-24 20:44:39,712:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:44:39,718:INFO:Initializing create_model()
+2021-05-24 20:44:39,726:INFO:create_model(model=lda, multi_core=True, num_topics=32, verbose=False, system=True)
+2021-05-24 20:44:39,735:INFO:Checking exceptions
+2021-05-24 20:44:39,735:INFO:Preloading libraries
+2021-05-24 20:44:39,736:INFO:Preparing display monitor
+2021-05-24 20:44:39,746:INFO:Defining topic model
+2021-05-24 20:44:39,746:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:44:39,746:INFO:Defining num_topics parameter
+2021-05-24 20:44:39,746:INFO:num_topics set to: 32
+2021-05-24 20:44:39,747:INFO:LDA multi_core enabled
+2021-05-24 20:44:39,747:INFO:LdaMulticore imported successfully
+2021-05-24 20:44:43,241:INFO:LdaMulticore trained successfully
+2021-05-24 20:44:43,243:INFO:Creating MLFLow Logs
+2021-05-24 20:44:43,286:INFO:LdaModel(num_terms=1418, num_topics=32, decay=0.5, chunksize=100)
+2021-05-24 20:44:43,286:INFO:create_model() succesfully completed......................................
+2021-05-24 20:44:43,287:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:44:43,287:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:44:43,287:INFO:Initializing assign_model()
+2021-05-24 20:44:43,288:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=32, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:44:43,288:INFO:Determining model type
+2021-05-24 20:44:43,288:INFO:model type: lda
+2021-05-24 20:44:43,288:INFO:Checking exceptions
+2021-05-24 20:44:43,288:INFO:Preloading libraries
+2021-05-24 20:44:43,288:INFO:Preparing display monitor
+2021-05-24 20:44:45,091:INFO:(2129, 36)
+2021-05-24 20:44:45,092:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:44:45,096:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:44:45,100:INFO:Fitting Model with num_topics = 64
+2021-05-24 20:44:45,140:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:44:45,141:INFO:Initializing create_model()
+2021-05-24 20:44:45,141:INFO:create_model(model=lda, multi_core=True, num_topics=64, verbose=False, system=True)
+2021-05-24 20:44:45,141:INFO:Checking exceptions
+2021-05-24 20:44:45,141:INFO:Preloading libraries
+2021-05-24 20:44:45,141:INFO:Preparing display monitor
+2021-05-24 20:44:45,153:INFO:Defining topic model
+2021-05-24 20:44:45,153:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:44:45,153:INFO:Defining num_topics parameter
+2021-05-24 20:44:45,153:INFO:num_topics set to: 64
+2021-05-24 20:44:45,155:INFO:LDA multi_core enabled
+2021-05-24 20:44:45,155:INFO:LdaMulticore imported successfully
+2021-05-24 20:44:48,617:INFO:LdaMulticore trained successfully
+2021-05-24 20:44:48,618:INFO:Creating MLFLow Logs
+2021-05-24 20:44:48,669:INFO:LdaModel(num_terms=1418, num_topics=64, decay=0.5, chunksize=100)
+2021-05-24 20:44:48,669:INFO:create_model() succesfully completed......................................
+2021-05-24 20:44:48,669:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:44:48,669:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:44:48,670:INFO:Initializing assign_model()
+2021-05-24 20:44:48,670:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=64, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:44:48,670:INFO:Determining model type
+2021-05-24 20:44:48,670:INFO:model type: lda
+2021-05-24 20:44:48,670:INFO:Checking exceptions
+2021-05-24 20:44:48,670:INFO:Preloading libraries
+2021-05-24 20:44:48,670:INFO:Preparing display monitor
+2021-05-24 20:44:50,811:INFO:(2129, 68)
+2021-05-24 20:44:50,811:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:44:50,822:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:44:50,853:INFO:Fitting Model with num_topics = 100
+2021-05-24 20:44:50,868:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:44:50,869:INFO:Initializing create_model()
+2021-05-24 20:44:50,869:INFO:create_model(model=lda, multi_core=True, num_topics=100, verbose=False, system=True)
+2021-05-24 20:44:50,869:INFO:Checking exceptions
+2021-05-24 20:44:50,869:INFO:Preloading libraries
+2021-05-24 20:44:50,869:INFO:Preparing display monitor
+2021-05-24 20:44:50,881:INFO:Defining topic model
+2021-05-24 20:44:50,881:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:44:50,881:INFO:Defining num_topics parameter
+2021-05-24 20:44:50,881:INFO:num_topics set to: 100
+2021-05-24 20:44:50,882:INFO:LDA multi_core enabled
+2021-05-24 20:44:50,882:INFO:LdaMulticore imported successfully
+2021-05-24 20:44:55,094:INFO:LdaMulticore trained successfully
+2021-05-24 20:44:55,095:INFO:Creating MLFLow Logs
+2021-05-24 20:44:55,140:INFO:LdaModel(num_terms=1418, num_topics=100, decay=0.5, chunksize=100)
+2021-05-24 20:44:55,140:INFO:create_model() succesfully completed......................................
+2021-05-24 20:44:55,140:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:44:55,140:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:44:55,141:INFO:Initializing assign_model()
+2021-05-24 20:44:55,141:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=100, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:44:55,141:INFO:Determining model type
+2021-05-24 20:44:55,141:INFO:model type: lda
+2021-05-24 20:44:55,141:INFO:Checking exceptions
+2021-05-24 20:44:55,141:INFO:Preloading libraries
+2021-05-24 20:44:55,141:INFO:Preparing display monitor
+2021-05-24 20:44:58,163:INFO:(2129, 104)
+2021-05-24 20:44:58,163:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:44:58,172:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:44:58,174:INFO:Fitting Model with num_topics = 200
+2021-05-24 20:44:58,179:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:44:58,180:INFO:Initializing create_model()
+2021-05-24 20:44:58,180:INFO:create_model(model=lda, multi_core=True, num_topics=200, verbose=False, system=True)
+2021-05-24 20:44:58,180:INFO:Checking exceptions
+2021-05-24 20:44:58,180:INFO:Preloading libraries
+2021-05-24 20:44:58,180:INFO:Preparing display monitor
+2021-05-24 20:44:58,186:INFO:Defining topic model
+2021-05-24 20:44:58,187:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:44:58,187:INFO:Defining num_topics parameter
+2021-05-24 20:44:58,187:INFO:num_topics set to: 200
+2021-05-24 20:44:58,188:INFO:LDA multi_core enabled
+2021-05-24 20:44:58,188:INFO:LdaMulticore imported successfully
+2021-05-24 20:45:04,137:INFO:LdaMulticore trained successfully
+2021-05-24 20:45:04,139:INFO:Creating MLFLow Logs
+2021-05-24 20:45:04,203:INFO:LdaModel(num_terms=1418, num_topics=200, decay=0.5, chunksize=100)
+2021-05-24 20:45:04,203:INFO:create_model() succesfully completed......................................
+2021-05-24 20:45:04,203:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:45:04,203:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:45:04,204:INFO:Initializing assign_model()
+2021-05-24 20:45:04,204:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=200, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:45:04,204:INFO:Determining model type
+2021-05-24 20:45:04,204:INFO:model type: lda
+2021-05-24 20:45:04,204:INFO:Checking exceptions
+2021-05-24 20:45:04,204:INFO:Preloading libraries
+2021-05-24 20:45:04,204:INFO:Preparing display monitor
+2021-05-24 20:45:09,683:INFO:(2129, 204)
+2021-05-24 20:45:09,683:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:45:09,704:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:45:09,710:INFO:Fitting Model with num_topics = 300
+2021-05-24 20:45:09,721:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:45:09,721:INFO:Initializing create_model()
+2021-05-24 20:45:09,721:INFO:create_model(model=lda, multi_core=True, num_topics=300, verbose=False, system=True)
+2021-05-24 20:45:09,721:INFO:Checking exceptions
+2021-05-24 20:45:09,721:INFO:Preloading libraries
+2021-05-24 20:45:09,721:INFO:Preparing display monitor
+2021-05-24 20:45:09,732:INFO:Defining topic model
+2021-05-24 20:45:09,732:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:45:09,733:INFO:Defining num_topics parameter
+2021-05-24 20:45:09,733:INFO:num_topics set to: 300
+2021-05-24 20:45:09,735:INFO:LDA multi_core enabled
+2021-05-24 20:45:09,735:INFO:LdaMulticore imported successfully
+2021-05-24 20:45:17,084:INFO:LdaMulticore trained successfully
+2021-05-24 20:45:17,085:INFO:Creating MLFLow Logs
+2021-05-24 20:45:17,142:INFO:LdaModel(num_terms=1418, num_topics=300, decay=0.5, chunksize=100)
+2021-05-24 20:45:17,142:INFO:create_model() succesfully completed......................................
+2021-05-24 20:45:17,142:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:45:17,142:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:45:17,143:INFO:Initializing assign_model()
+2021-05-24 20:45:17,143:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=300, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:45:17,143:INFO:Determining model type
+2021-05-24 20:45:17,143:INFO:model type: lda
+2021-05-24 20:45:17,143:INFO:Checking exceptions
+2021-05-24 20:45:17,143:INFO:Preloading libraries
+2021-05-24 20:45:17,144:INFO:Preparing display monitor
+2021-05-24 20:45:23,020:INFO:(2129, 304)
+2021-05-24 20:45:23,020:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:45:23,043:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:45:23,045:INFO:Fitting Model with num_topics = 400
+2021-05-24 20:45:23,051:INFO:SubProcess create_model() called ==================================
+2021-05-24 20:45:23,051:INFO:Initializing create_model()
+2021-05-24 20:45:23,051:INFO:create_model(model=lda, multi_core=True, num_topics=400, verbose=False, system=True)
+2021-05-24 20:45:23,052:INFO:Checking exceptions
+2021-05-24 20:45:23,052:INFO:Preloading libraries
+2021-05-24 20:45:23,052:INFO:Preparing display monitor
+2021-05-24 20:45:23,060:INFO:Defining topic model
+2021-05-24 20:45:23,060:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:45:23,060:INFO:Defining num_topics parameter
+2021-05-24 20:45:23,060:INFO:num_topics set to: 400
+2021-05-24 20:45:23,061:INFO:LDA multi_core enabled
+2021-05-24 20:45:23,061:INFO:LdaMulticore imported successfully
+2021-05-24 20:45:31,022:INFO:LdaMulticore trained successfully
+2021-05-24 20:45:31,023:INFO:Creating MLFLow Logs
+2021-05-24 20:45:31,082:INFO:LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100)
+2021-05-24 20:45:31,082:INFO:create_model() succesfully completed......................................
+2021-05-24 20:45:31,082:INFO:SubProcess create_model() end ==================================
+2021-05-24 20:45:31,082:INFO:SubProcess assign_model() called ==================================
+2021-05-24 20:45:31,083:INFO:Initializing assign_model()
+2021-05-24 20:45:31,083:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=400, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 20:45:31,083:INFO:Determining model type
+2021-05-24 20:45:31,083:INFO:model type: lda
+2021-05-24 20:45:31,083:INFO:Checking exceptions
+2021-05-24 20:45:31,083:INFO:Preloading libraries
+2021-05-24 20:45:31,083:INFO:Preparing display monitor
+2021-05-24 20:45:38,572:INFO:(2129, 404)
+2021-05-24 20:45:38,572:INFO:assign_model() succesfully completed......................................
+2021-05-24 20:45:38,604:INFO:SubProcess assign_model() end ==================================
+2021-05-24 20:45:38,607:INFO:Importing untrained Regressor
+2021-05-24 20:45:38,612:INFO:Linear Regression Imported Successfully
+2021-05-24 20:45:38,614:INFO:Training supervised model with num_topics: 2
+2021-05-24 20:55:17,988:INFO:Initializing create_model()
+2021-05-24 20:55:17,988:INFO:create_model(model=lda, multi_core=False, num_topics=20, verbose=True, system=True)
+2021-05-24 20:55:17,988:INFO:Checking exceptions
+2021-05-24 20:55:17,989:INFO:Preloading libraries
+2021-05-24 20:55:17,989:INFO:Preparing display monitor
+2021-05-24 20:55:18,006:INFO:Defining topic model
+2021-05-24 20:55:18,006:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 20:55:18,006:INFO:Defining num_topics parameter
+2021-05-24 20:55:18,006:INFO:num_topics set to: 20
+2021-05-24 20:55:18,012:INFO:LdaModel imported successfully
+2021-05-24 20:55:21,422:INFO:LdaModel trained successfully
+2021-05-24 20:55:21,423:INFO:Creating MLFLow Logs
+2021-05-24 20:55:21,477:INFO:LdaModel(num_terms=1418, num_topics=20, decay=0.5, chunksize=100)
+2021-05-24 20:55:21,477:INFO:create_model() succesfully completed......................................
+2021-05-24 21:58:24,094:INFO:Initializing create_model()
+2021-05-24 21:58:24,094:INFO:create_model(model=lda, multi_core=False, num_topics=20, verbose=True, system=True)
+2021-05-24 21:58:24,095:INFO:Checking exceptions
+2021-05-24 21:58:24,095:INFO:Preloading libraries
+2021-05-24 21:58:24,095:INFO:Preparing display monitor
+2021-05-24 21:58:24,116:INFO:Defining topic model
+2021-05-24 21:58:24,116:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 21:58:24,116:INFO:Defining num_topics parameter
+2021-05-24 21:58:24,116:INFO:num_topics set to: 20
+2021-05-24 21:58:24,126:INFO:LdaModel imported successfully
+2021-05-24 21:58:27,408:INFO:LdaModel trained successfully
+2021-05-24 21:58:27,409:INFO:Creating MLFLow Logs
+2021-05-24 21:58:27,458:INFO:LdaModel(num_terms=1418, num_topics=20, decay=0.5, chunksize=100)
+2021-05-24 21:58:27,459:INFO:create_model() succesfully completed......................................
+2021-05-24 21:58:42,680:INFO:Initializing plot_model()
+2021-05-24 21:58:42,680:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=20, decay=0.5, chunksize=100), plot=topic_distribution, topic_num=None, save=False, system=True)
+2021-05-24 21:58:42,680:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 21:58:42,680:INFO:Checking exceptions
+2021-05-24 21:58:42,680:INFO:Importing libraries
+2021-05-24 21:58:42,689:INFO:save_param set to False
+2021-05-24 21:58:42,689:INFO:plot type: topic_distribution
+2021-05-24 21:58:42,697:INFO:SubProcess assign_model() called ==================================
+2021-05-24 21:58:42,698:INFO:Initializing assign_model()
+2021-05-24 21:58:42,698:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=20, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 21:58:42,698:INFO:Determining model type
+2021-05-24 21:58:42,698:INFO:model type: lda
+2021-05-24 21:58:42,698:INFO:Checking exceptions
+2021-05-24 21:58:42,698:INFO:Preloading libraries
+2021-05-24 21:58:42,698:INFO:Preparing display monitor
+2021-05-24 21:58:44,396:INFO:(2129, 24)
+2021-05-24 21:58:44,396:INFO:assign_model() succesfully completed......................................
+2021-05-24 21:58:44,399:INFO:SubProcess assign_model() end ==================================
+2021-05-24 21:58:44,408:INFO:Sorting Dataframe
+2021-05-24 21:58:44,410:INFO:Rendering Visual
+2021-05-24 21:58:44,462:INFO:Visual Rendered Successfully
+2021-05-24 21:58:44,463:INFO:plot_model() succesfully completed......................................
+2021-05-24 21:59:15,174:INFO:PyCaret NLP Module
+2021-05-24 21:59:15,174:INFO:version 2.3.1
+2021-05-24 21:59:15,174:INFO:Initializing setup()
+2021-05-24 21:59:15,174:INFO:USI: ef0b
+2021-05-24 21:59:15,174:INFO:setup(data=(2129, 2), target=summerizedAnswers, custom_stopwords=['would', 'want', 'usd', 'many', 'also', 'make', 'find', 'see', 'say', 'often', 'much', 'go', 'come', 'thought', 'even', 'learn', 'happen', 'much', 'let', 'know', 'thing', 'need', 'take', 'get', 'try', 'ask', 'maybe', 'keep', 'end', 'way', 'suggest', 'likely', 'area', 'part', 'consider', 'right', 'able', 'could', 'tell', 'seem', 'use', 'sometimes', 'think', 'look', 'self', 'lot', 'new', 'well', 'give', 'start'], html=True, session_id=123, log_experiment=True,
+                    experiment_name=summerizedAnswers, log_plots=False, log_data=False, verbose=True)
+2021-05-24 21:59:15,174:INFO:Checking environment
+2021-05-24 21:59:15,174:INFO:python_version: 3.8.5
+2021-05-24 21:59:15,174:INFO:python_build: ('default', 'Jan 27 2021 15:41:15')
+2021-05-24 21:59:15,175:INFO:machine: x86_64
+2021-05-24 21:59:15,185:INFO:platform: Linux-5.8.0-53-generic-x86_64-with-glibc2.29
+2021-05-24 21:59:15,185:INFO:Memory: svmem(total=8157831168, available=2985721856, percent=63.4, used=4245733376, free=665210880, active=4704669696, inactive=2107592704, buffers=220545024, cached=3026341888, shared=616697856, slab=361549824)
+2021-05-24 21:59:15,186:INFO:Physical Core: 2
+2021-05-24 21:59:15,186:INFO:Logical Core: 4
+2021-05-24 21:59:15,186:INFO:Checking libraries
+2021-05-24 21:59:15,186:INFO:pd==1.2.4
+2021-05-24 21:59:15,186:INFO:numpy==1.20.3
+2021-05-24 21:59:15,367:INFO:gensim==3.8.3
+2021-05-24 21:59:15,577:INFO:spacy==2.3.5
+2021-05-24 21:59:15,578:INFO:nltk==3.6.2
+2021-05-24 21:59:15,595:INFO:textblob==0.15.3
+2021-05-24 21:59:15,707:INFO:pyLDAvis==3.3.1
+2021-05-24 21:59:15,742:INFO:wordcloud==1.8.1
+2021-05-24 21:59:15,945:INFO:mlflow==1.17.0
+2021-05-24 21:59:15,946:INFO:Checking Exceptions
+2021-05-24 21:59:16,576:INFO:Preloading libraries
+2021-05-24 21:59:16,606:INFO:Preparing display monitor
+2021-05-24 21:59:16,621:INFO:Importing libraries
+2021-05-24 21:59:16,622:INFO:Declaring global variables
+2021-05-24 21:59:16,622:INFO:Input provided : dataframe
+2021-05-24 21:59:16,622:INFO:session_id set to : 123
+2021-05-24 21:59:16,622:INFO:Copying training dataset
+2021-05-24 21:59:16,624:INFO:Importing stopwords from nltk
+2021-05-24 21:59:32,751:INFO:Removing numeric characters from the text
+2021-05-24 21:59:32,767:INFO:Removing special characters from the text
+2021-05-24 21:59:32,818:INFO:Tokenizing Words
+2021-05-24 21:59:32,875:INFO:Removing stopwords
+2021-05-24 21:59:32,915:INFO:Extracting Bigrams
+2021-05-24 21:59:33,018:INFO:Extracting Trigrams
+2021-05-24 21:59:33,179:INFO:Lemmatizing tokens
+2021-05-24 21:59:38,873:INFO:Removing stopwords after lemmatizing
+2021-05-24 21:59:38,904:INFO:Creating corpus and dictionary
+2021-05-24 21:59:38,939:INFO:Compiling processed text
+2021-05-24 21:59:38,940:INFO:Compiling information grid
+2021-05-24 21:59:39,160:INFO:Creating MLFlow logs
+2021-05-24 21:59:39,250:INFO:setup() succesfully completed......................................
+2021-05-24 21:59:39,287:INFO:Initializing create_model()
+2021-05-24 21:59:39,287:INFO:create_model(model=lda, multi_core=False, num_topics=20, verbose=True, system=True)
+2021-05-24 21:59:39,287:INFO:Checking exceptions
+2021-05-24 21:59:39,287:INFO:Preloading libraries
+2021-05-24 21:59:39,288:INFO:Preparing display monitor
+2021-05-24 21:59:39,313:INFO:Defining topic model
+2021-05-24 21:59:39,314:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 21:59:39,314:INFO:Defining num_topics parameter
+2021-05-24 21:59:39,314:INFO:num_topics set to: 20
+2021-05-24 21:59:39,321:INFO:LdaModel imported successfully
+2021-05-24 21:59:42,398:INFO:LdaModel trained successfully
+2021-05-24 21:59:42,399:INFO:Creating MLFLow Logs
+2021-05-24 21:59:42,453:INFO:LdaModel(num_terms=1418, num_topics=20, decay=0.5, chunksize=100)
+2021-05-24 21:59:42,453:INFO:create_model() succesfully completed......................................
+2021-05-24 21:59:42,489:INFO:Initializing plot_model()
+2021-05-24 21:59:42,489:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=20, decay=0.5, chunksize=100), plot=topic_distribution, topic_num=None, save=False, system=True)
+2021-05-24 21:59:42,489:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 21:59:42,489:INFO:Checking exceptions
+2021-05-24 21:59:42,489:INFO:Importing libraries
+2021-05-24 21:59:42,630:INFO:save_param set to False
+2021-05-24 21:59:42,630:INFO:plot type: topic_distribution
+2021-05-24 21:59:42,635:INFO:SubProcess assign_model() called ==================================
+2021-05-24 21:59:42,636:INFO:Initializing assign_model()
+2021-05-24 21:59:42,636:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=20, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 21:59:42,636:INFO:Determining model type
+2021-05-24 21:59:42,636:INFO:model type: lda
+2021-05-24 21:59:42,636:INFO:Checking exceptions
+2021-05-24 21:59:42,636:INFO:Preloading libraries
+2021-05-24 21:59:42,636:INFO:Preparing display monitor
+2021-05-24 21:59:44,143:INFO:(2129, 24)
+2021-05-24 21:59:44,144:INFO:assign_model() succesfully completed......................................
+2021-05-24 21:59:44,146:INFO:SubProcess assign_model() end ==================================
+2021-05-24 21:59:44,159:INFO:Sorting Dataframe
+2021-05-24 21:59:44,161:INFO:Rendering Visual
+2021-05-24 21:59:44,435:INFO:Visual Rendered Successfully
+2021-05-24 21:59:44,435:INFO:plot_model() succesfully completed......................................
+2021-05-24 21:59:44,439:INFO:Initializing plot_model()
+2021-05-24 21:59:44,439:INFO:plot_model(model=None, plot=frequency, topic_num=None, save=False, system=True)
+2021-05-24 21:59:44,439:INFO:Checking exceptions
+2021-05-24 21:59:44,440:INFO:Importing libraries
+2021-05-24 21:59:44,448:INFO:save_param set to False
+2021-05-24 21:59:44,448:INFO:plot type: frequency
+2021-05-24 21:59:44,448:INFO:Rendering Visual
+2021-05-24 21:59:44,448:WARNING:topic_num set to None. Plot generated at corpus level.
+2021-05-24 21:59:44,449:INFO:Fitting CountVectorizer()
+2021-05-24 21:59:44,617:INFO:Visual Rendered Successfully
+2021-05-24 21:59:44,617:INFO:plot_model() succesfully completed......................................
+2021-05-24 21:59:44,622:INFO:Initializing plot_model()
+2021-05-24 21:59:44,622:INFO:plot_model(model=None, plot=bigram, topic_num=None, save=False, system=True)
+2021-05-24 21:59:44,622:INFO:Checking exceptions
+2021-05-24 21:59:44,622:INFO:Importing libraries
+2021-05-24 21:59:44,627:INFO:save_param set to False
+2021-05-24 21:59:44,627:INFO:plot type: bigram
+2021-05-24 21:59:44,628:WARNING:topic_num set to None. Plot generated at corpus level.
+2021-05-24 21:59:44,628:INFO:Fitting CountVectorizer()
+2021-05-24 21:59:44,675:INFO:Rendering Visual
+2021-05-24 21:59:44,709:INFO:Visual Rendered Successfully
+2021-05-24 21:59:44,710:INFO:plot_model() succesfully completed......................................
+2021-05-24 21:59:44,720:INFO:Initializing plot_model()
+2021-05-24 21:59:44,720:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=20, decay=0.5, chunksize=100), plot=tsne, topic_num=None, save=False, system=True)
+2021-05-24 21:59:44,720:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 21:59:44,720:INFO:Checking exceptions
+2021-05-24 21:59:44,720:INFO:Importing libraries
+2021-05-24 21:59:44,725:INFO:save_param set to False
+2021-05-24 21:59:44,725:INFO:plot type: tsne
+2021-05-24 21:59:44,725:INFO:SubProcess assign_model() called ==================================
+2021-05-24 21:59:44,725:INFO:Initializing assign_model()
+2021-05-24 21:59:44,725:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=20, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 21:59:44,725:INFO:Determining model type
+2021-05-24 21:59:44,725:INFO:model type: lda
+2021-05-24 21:59:44,725:INFO:Checking exceptions
+2021-05-24 21:59:44,725:INFO:Preloading libraries
+2021-05-24 21:59:44,725:INFO:Preparing display monitor
+2021-05-24 21:59:46,610:INFO:(2129, 24)
+2021-05-24 21:59:46,610:INFO:assign_model() succesfully completed......................................
+2021-05-24 21:59:46,613:INFO:SubProcess assign_model() end ==================================
+2021-05-24 21:59:46,618:INFO:Fitting TSNE()
+2021-05-24 22:00:09,179:INFO:Sorting Dataframe
+2021-05-24 22:00:09,186:INFO:Rendering Visual
+2021-05-24 22:00:09,363:INFO:Visual Rendered Successfully
+2021-05-24 22:00:09,363:INFO:plot_model() succesfully completed......................................
+2021-05-24 22:00:09,372:INFO:Initializing plot_model()
+2021-05-24 22:00:09,372:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=20, decay=0.5, chunksize=100), plot=umap, topic_num=None, save=False, system=True)
+2021-05-24 22:00:09,372:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 22:00:09,372:INFO:Checking exceptions
+2021-05-24 22:00:09,373:INFO:Importing libraries
+2021-05-24 22:00:09,384:INFO:save_param set to False
+2021-05-24 22:00:09,384:INFO:plot type: umap
+2021-05-24 22:00:24,812:INFO:Fitting TfidfVectorizer()
+2021-05-24 22:00:24,826:INFO:Fitting KMeans()
+2021-05-24 22:00:25,102:INFO:Fitting UMAP()
+2021-05-24 22:00:38,718:INFO:Rendering Visual
+2021-05-24 22:00:38,843:INFO:Visual Rendered Successfully
+2021-05-24 22:00:38,843:INFO:plot_model() succesfully completed......................................
+2021-05-24 22:00:44,171:INFO:Initializing plot_model()
+2021-05-24 22:00:44,171:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=20, decay=0.5, chunksize=100), plot=topic_distribution, topic_num=None, save=False, system=True)
+2021-05-24 22:00:44,171:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 22:00:44,171:INFO:Checking exceptions
+2021-05-24 22:00:44,171:INFO:Importing libraries
+2021-05-24 22:00:44,179:INFO:save_param set to False
+2021-05-24 22:00:44,179:INFO:plot type: topic_distribution
+2021-05-24 22:00:44,188:INFO:SubProcess assign_model() called ==================================
+2021-05-24 22:00:44,188:INFO:Initializing assign_model()
+2021-05-24 22:00:44,188:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=20, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 22:00:44,188:INFO:Determining model type
+2021-05-24 22:00:44,188:INFO:model type: lda
+2021-05-24 22:00:44,189:INFO:Checking exceptions
+2021-05-24 22:00:44,189:INFO:Preloading libraries
+2021-05-24 22:00:44,189:INFO:Preparing display monitor
+2021-05-24 22:00:45,824:INFO:(2129, 24)
+2021-05-24 22:00:45,824:INFO:assign_model() succesfully completed......................................
+2021-05-24 22:00:45,826:INFO:SubProcess assign_model() end ==================================
+2021-05-24 22:00:45,835:INFO:Sorting Dataframe
+2021-05-24 22:00:45,839:INFO:Rendering Visual
+2021-05-24 22:00:45,923:INFO:Visual Rendered Successfully
+2021-05-24 22:00:45,923:INFO:plot_model() succesfully completed......................................
+2021-05-24 22:01:06,772:INFO:Initializing plot_model()
+2021-05-24 22:01:06,773:INFO:plot_model(model=None, plot=frequency, topic_num=None, save=False, system=True)
+2021-05-24 22:01:06,773:INFO:Checking exceptions
+2021-05-24 22:01:06,773:INFO:Importing libraries
+2021-05-24 22:01:06,780:INFO:save_param set to False
+2021-05-24 22:01:06,780:INFO:plot type: frequency
+2021-05-24 22:01:06,780:INFO:Rendering Visual
+2021-05-24 22:01:06,780:WARNING:topic_num set to None. Plot generated at corpus level.
+2021-05-24 22:01:06,781:INFO:Fitting CountVectorizer()
+2021-05-24 22:01:06,863:INFO:Visual Rendered Successfully
+2021-05-24 22:01:06,863:INFO:plot_model() succesfully completed......................................
+2021-05-24 22:01:27,691:INFO:Initializing plot_model()
+2021-05-24 22:01:27,691:INFO:plot_model(model=None, plot=bigram, topic_num=None, save=False, system=True)
+2021-05-24 22:01:27,691:INFO:Checking exceptions
+2021-05-24 22:01:27,691:INFO:Importing libraries
+2021-05-24 22:01:27,703:INFO:save_param set to False
+2021-05-24 22:01:27,704:INFO:plot type: bigram
+2021-05-24 22:01:27,704:WARNING:topic_num set to None. Plot generated at corpus level.
+2021-05-24 22:01:27,704:INFO:Fitting CountVectorizer()
+2021-05-24 22:01:27,759:INFO:Rendering Visual
+2021-05-24 22:01:27,810:INFO:Visual Rendered Successfully
+2021-05-24 22:01:27,810:INFO:plot_model() succesfully completed......................................
+2021-05-24 22:01:36,253:INFO:Initializing plot_model()
+2021-05-24 22:01:36,253:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=20, decay=0.5, chunksize=100), plot=tsne, topic_num=None, save=False, system=True)
+2021-05-24 22:01:36,253:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 22:01:36,253:INFO:Checking exceptions
+2021-05-24 22:01:36,253:INFO:Importing libraries
+2021-05-24 22:01:36,265:INFO:save_param set to False
+2021-05-24 22:01:36,265:INFO:plot type: tsne
+2021-05-24 22:01:36,265:INFO:SubProcess assign_model() called ==================================
+2021-05-24 22:01:36,265:INFO:Initializing assign_model()
+2021-05-24 22:01:36,265:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=20, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 22:01:36,265:INFO:Determining model type
+2021-05-24 22:01:36,265:INFO:model type: lda
+2021-05-24 22:01:36,265:INFO:Checking exceptions
+2021-05-24 22:01:36,265:INFO:Preloading libraries
+2021-05-24 22:01:36,265:INFO:Preparing display monitor
+2021-05-24 22:01:38,054:INFO:(2129, 24)
+2021-05-24 22:01:38,054:INFO:assign_model() succesfully completed......................................
+2021-05-24 22:01:38,056:INFO:SubProcess assign_model() end ==================================
+2021-05-24 22:01:38,067:INFO:Fitting TSNE()
+2021-05-24 22:02:00,137:INFO:Sorting Dataframe
+2021-05-24 22:02:00,143:INFO:Rendering Visual
+2021-05-24 22:02:00,325:INFO:Visual Rendered Successfully
+2021-05-24 22:02:00,325:INFO:plot_model() succesfully completed......................................
+2021-05-24 22:02:24,724:INFO:Initializing plot_model()
+2021-05-24 22:02:24,724:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=20, decay=0.5, chunksize=100), plot=umap, topic_num=None, save=False, system=True)
+2021-05-24 22:02:24,724:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 22:02:24,724:INFO:Checking exceptions
+2021-05-24 22:02:24,724:INFO:Importing libraries
+2021-05-24 22:02:24,733:INFO:save_param set to False
+2021-05-24 22:02:24,733:INFO:plot type: umap
+2021-05-24 22:02:24,733:INFO:Fitting TfidfVectorizer()
+2021-05-24 22:02:24,764:INFO:Fitting KMeans()
+2021-05-24 22:02:25,475:INFO:Fitting UMAP()
+2021-05-24 22:02:34,038:INFO:Rendering Visual
+2021-05-24 22:02:34,148:INFO:Visual Rendered Successfully
+2021-05-24 22:02:34,148:INFO:plot_model() succesfully completed......................................
+2021-05-24 22:03:01,842:INFO:PyCaret NLP Module
+2021-05-24 22:03:01,842:INFO:version 2.3.1
+2021-05-24 22:03:01,842:INFO:Initializing setup()
+2021-05-24 22:03:01,842:INFO:USI: b8ca
+2021-05-24 22:03:01,842:INFO:setup(data=(2129, 2), target=summerizedAnswers, custom_stopwords=['would', 'want', 'usd', 'many', 'also', 'make', 'find', 'see', 'say', 'often', 'much', 'go', 'come', 'thought', 'even', 'learn', 'happen', 'much', 'let', 'know', 'thing', 'need', 'take', 'get', 'try', 'ask', 'maybe', 'keep', 'end', 'way', 'suggest', 'likely', 'area', 'part', 'consider', 'right', 'able', 'could', 'tell', 'seem', 'use', 'sometimes', 'think', 'look', 'self', 'lot', 'new', 'well', 'give', 'start'], html=True, session_id=123, log_experiment=True,
+                    experiment_name=summerizedAnswers, log_plots=False, log_data=False, verbose=True)
+2021-05-24 22:03:01,842:INFO:Checking environment
+2021-05-24 22:03:01,842:INFO:python_version: 3.8.5
+2021-05-24 22:03:01,842:INFO:python_build: ('default', 'Jan 27 2021 15:41:15')
+2021-05-24 22:03:01,842:INFO:machine: x86_64
+2021-05-24 22:03:01,855:INFO:platform: Linux-5.8.0-53-generic-x86_64-with-glibc2.29
+2021-05-24 22:03:01,855:INFO:Memory: svmem(total=8157831168, available=3107520512, percent=61.9, used=4118573056, free=740327424, active=4792197120, inactive=1942892544, buffers=222486528, cached=3076444160, shared=622067712, slab=362807296)
+2021-05-24 22:03:01,856:INFO:Physical Core: 2
+2021-05-24 22:03:01,856:INFO:Logical Core: 4
+2021-05-24 22:03:01,856:INFO:Checking libraries
+2021-05-24 22:03:01,856:INFO:pd==1.2.4
+2021-05-24 22:03:01,856:INFO:numpy==1.20.3
+2021-05-24 22:03:02,011:INFO:gensim==3.8.3
+2021-05-24 22:03:02,164:INFO:spacy==2.3.5
+2021-05-24 22:03:02,164:INFO:nltk==3.6.2
+2021-05-24 22:03:02,181:INFO:textblob==0.15.3
+2021-05-24 22:03:02,287:INFO:pyLDAvis==3.3.1
+2021-05-24 22:03:02,321:INFO:wordcloud==1.8.1
+2021-05-24 22:03:02,494:INFO:mlflow==1.17.0
+2021-05-24 22:03:02,494:INFO:Checking Exceptions
+2021-05-24 22:03:03,114:INFO:Preloading libraries
+2021-05-24 22:03:03,144:INFO:Preparing display monitor
+2021-05-24 22:03:03,158:INFO:Importing libraries
+2021-05-24 22:03:03,158:INFO:Declaring global variables
+2021-05-24 22:03:03,158:INFO:Input provided : dataframe
+2021-05-24 22:03:03,159:INFO:session_id set to : 123
+2021-05-24 22:03:03,159:INFO:Copying training dataset
+2021-05-24 22:03:03,160:INFO:Importing stopwords from nltk
+2021-05-24 22:03:37,596:INFO:Removing numeric characters from the text
+2021-05-24 22:03:37,608:INFO:Removing special characters from the text
+2021-05-24 22:03:37,638:INFO:Tokenizing Words
+2021-05-24 22:03:37,708:INFO:Removing stopwords
+2021-05-24 22:03:37,747:INFO:Extracting Bigrams
+2021-05-24 22:03:37,850:INFO:Extracting Trigrams
+2021-05-24 22:03:38,018:INFO:Lemmatizing tokens
+2021-05-24 22:03:43,940:INFO:Removing stopwords after lemmatizing
+2021-05-24 22:03:43,970:INFO:Creating corpus and dictionary
+2021-05-24 22:03:44,003:INFO:Compiling processed text
+2021-05-24 22:03:44,005:INFO:Compiling information grid
+2021-05-24 22:03:44,223:INFO:Creating MLFlow logs
+2021-05-24 22:03:44,307:INFO:setup() succesfully completed......................................
+2021-05-24 22:03:44,343:INFO:Initializing create_model()
+2021-05-24 22:03:44,343:INFO:create_model(model=lda, multi_core=False, num_topics=16, verbose=True, system=True)
+2021-05-24 22:03:44,344:INFO:Checking exceptions
+2021-05-24 22:03:44,344:INFO:Preloading libraries
+2021-05-24 22:03:44,344:INFO:Preparing display monitor
+2021-05-24 22:03:44,374:INFO:Defining topic model
+2021-05-24 22:03:44,374:INFO:Model: Latent Dirichlet Allocation
+2021-05-24 22:03:44,375:INFO:Defining num_topics parameter
+2021-05-24 22:03:44,375:INFO:num_topics set to: 16
+2021-05-24 22:03:44,381:INFO:LdaModel imported successfully
+2021-05-24 22:03:47,550:INFO:LdaModel trained successfully
+2021-05-24 22:03:47,551:INFO:Creating MLFLow Logs
+2021-05-24 22:03:47,598:INFO:LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100)
+2021-05-24 22:03:47,598:INFO:create_model() succesfully completed......................................
+2021-05-24 22:03:47,633:INFO:Initializing plot_model()
+2021-05-24 22:03:47,633:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100), plot=topic_distribution, topic_num=None, save=False, system=True)
+2021-05-24 22:03:47,633:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 22:03:47,633:INFO:Checking exceptions
+2021-05-24 22:03:47,634:INFO:Importing libraries
+2021-05-24 22:03:47,778:INFO:save_param set to False
+2021-05-24 22:03:47,779:INFO:plot type: topic_distribution
+2021-05-24 22:03:47,784:INFO:SubProcess assign_model() called ==================================
+2021-05-24 22:03:47,784:INFO:Initializing assign_model()
+2021-05-24 22:03:47,784:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 22:03:47,784:INFO:Determining model type
+2021-05-24 22:03:47,784:INFO:model type: lda
+2021-05-24 22:03:47,784:INFO:Checking exceptions
+2021-05-24 22:03:47,784:INFO:Preloading libraries
+2021-05-24 22:03:47,784:INFO:Preparing display monitor
+2021-05-24 22:03:49,335:INFO:(2129, 20)
+2021-05-24 22:03:49,335:INFO:assign_model() succesfully completed......................................
+2021-05-24 22:03:49,336:INFO:SubProcess assign_model() end ==================================
+2021-05-24 22:03:49,353:INFO:Sorting Dataframe
+2021-05-24 22:03:49,355:INFO:Rendering Visual
+2021-05-24 22:03:49,633:INFO:Visual Rendered Successfully
+2021-05-24 22:03:49,633:INFO:plot_model() succesfully completed......................................
+2021-05-24 22:03:49,637:INFO:Initializing plot_model()
+2021-05-24 22:03:49,638:INFO:plot_model(model=None, plot=frequency, topic_num=None, save=False, system=True)
+2021-05-24 22:03:49,638:INFO:Checking exceptions
+2021-05-24 22:03:49,638:INFO:Importing libraries
+2021-05-24 22:03:49,652:INFO:save_param set to False
+2021-05-24 22:03:49,652:INFO:plot type: frequency
+2021-05-24 22:03:49,652:INFO:Rendering Visual
+2021-05-24 22:03:49,652:WARNING:topic_num set to None. Plot generated at corpus level.
+2021-05-24 22:03:49,653:INFO:Fitting CountVectorizer()
+2021-05-24 22:03:49,826:INFO:Visual Rendered Successfully
+2021-05-24 22:03:49,827:INFO:plot_model() succesfully completed......................................
+2021-05-24 22:03:49,834:INFO:Initializing plot_model()
+2021-05-24 22:03:49,834:INFO:plot_model(model=None, plot=bigram, topic_num=None, save=False, system=True)
+2021-05-24 22:03:49,834:INFO:Checking exceptions
+2021-05-24 22:03:49,834:INFO:Importing libraries
+2021-05-24 22:03:49,845:INFO:save_param set to False
+2021-05-24 22:03:49,845:INFO:plot type: bigram
+2021-05-24 22:03:49,845:WARNING:topic_num set to None. Plot generated at corpus level.
+2021-05-24 22:03:49,845:INFO:Fitting CountVectorizer()
+2021-05-24 22:03:49,893:INFO:Rendering Visual
+2021-05-24 22:03:49,931:INFO:Visual Rendered Successfully
+2021-05-24 22:03:49,931:INFO:plot_model() succesfully completed......................................
+2021-05-24 22:03:49,947:INFO:Initializing plot_model()
+2021-05-24 22:03:49,948:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100), plot=tsne, topic_num=None, save=False, system=True)
+2021-05-24 22:03:49,948:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 22:03:49,948:INFO:Checking exceptions
+2021-05-24 22:03:49,948:INFO:Importing libraries
+2021-05-24 22:03:49,958:INFO:save_param set to False
+2021-05-24 22:03:49,958:INFO:plot type: tsne
+2021-05-24 22:03:49,958:INFO:SubProcess assign_model() called ==================================
+2021-05-24 22:03:49,959:INFO:Initializing assign_model()
+2021-05-24 22:03:49,959:INFO:assign_model(model=LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100), verbose=False)
+2021-05-24 22:03:49,959:INFO:Determining model type
+2021-05-24 22:03:49,959:INFO:model type: lda
+2021-05-24 22:03:49,959:INFO:Checking exceptions
+2021-05-24 22:03:49,959:INFO:Preloading libraries
+2021-05-24 22:03:49,960:INFO:Preparing display monitor
+2021-05-24 22:03:52,344:INFO:(2129, 20)
+2021-05-24 22:03:52,344:INFO:assign_model() succesfully completed......................................
+2021-05-24 22:03:52,347:INFO:SubProcess assign_model() end ==================================
+2021-05-24 22:03:52,354:INFO:Fitting TSNE()
+2021-05-24 22:04:16,887:INFO:Sorting Dataframe
+2021-05-24 22:04:16,893:INFO:Rendering Visual
+2021-05-24 22:04:17,058:INFO:Visual Rendered Successfully
+2021-05-24 22:04:17,059:INFO:plot_model() succesfully completed......................................
+2021-05-24 22:04:17,066:INFO:Initializing plot_model()
+2021-05-24 22:04:17,066:INFO:plot_model(model=LdaModel(num_terms=1418, num_topics=16, decay=0.5, chunksize=100), plot=umap, topic_num=None, save=False, system=True)
+2021-05-24 22:04:17,066:INFO:Topic selected. topic_num : Topic 0
+2021-05-24 22:04:17,066:INFO:Checking exceptions
+2021-05-24 22:04:17,066:INFO:Importing libraries
+2021-05-24 22:04:17,081:INFO:save_param set to False
+2021-05-24 22:04:17,081:INFO:plot type: umap
+2021-05-24 22:04:31,378:INFO:Fitting TfidfVectorizer()
+2021-05-24 22:04:31,391:INFO:Fitting KMeans()
+2021-05-24 22:04:31,630:INFO:Fitting UMAP()
+2021-05-24 22:04:44,772:INFO:Rendering Visual
+2021-05-24 22:04:44,895:INFO:Visual Rendered Successfully
+2021-05-24 22:04:44,895:INFO:plot_model() succesfully completed......................................
