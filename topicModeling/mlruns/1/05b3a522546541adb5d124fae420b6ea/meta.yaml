@@ -1,0 +1,15 @@
+artifact_uri: file:///home/aqib/Github/topicModeling/mlruns/1/05b3a522546541adb5d124fae420b6ea/artifacts
+end_time: 1623506568204
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 05b3a522546541adb5d124fae420b6ea
+run_uuid: 05b3a522546541adb5d124fae420b6ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1623506568128
+status: 3
+tags: []
+user_id: aqib
